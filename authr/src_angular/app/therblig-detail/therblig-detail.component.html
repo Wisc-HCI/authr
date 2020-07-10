@@ -1,0 +1,308 @@
+<div fxFill fxLayout="column">
+    <ng-container *ngIf='therblig'>
+        <mat-toolbar color='primary'>
+            <span>{{therblig.type | replaceUnderscores | titlecase}} Detail</span>
+        </mat-toolbar>
+        <!-- Thing, Destination, and Agent -->
+        <div fxLayoutAlign="space-around center" class="element mat-elevation-z2">
+            <!-- Agent Selector -->
+            <div *ngIf='therblig.parameters.agent !== undefined' fxLayout="column" fxLayoutAlign="space-around center" >
+                <eco-fab-speed-dial direction='down'>
+                    <eco-fab-speed-dial-trigger>
+                      <button mat-fab
+                              (click)='noElementCheck("agents")'
+                              [style.background-color]="currentAgent.bgColor"
+                              [style.color]="currentAgent.txtColor"
+                              fxLayoutAlign="space-around center"
+                              matTooltip='{{currentAgent.name}}'
+                              matTooltipPosition="below"
+                              matTooltipShowDelay="250">
+                           <ng-container *ngIf='currentAgent.useIcon'>
+                               <mat-icon class="text-larger" svgIcon="{{currentAgent.type}}"></mat-icon>
+                           </ng-container>
+                           <span *ngIf='!currentAgent.useIcon'
+                                 fxLayoutAlign="space-around center"
+                                 class='text-larger'
+                                 [style.color]="currentAgent.txtColor">
+                               {{currentAgent.type.charAt(0) | titlecase}}
+                           </span>
+                      </button>
+                    </eco-fab-speed-dial-trigger>
+
+                    <eco-fab-speed-dial-actions>
+                        <button *ngFor="let agentKey of authrService.agentKeys"
+                                mat-mini-fab
+                                (click)="setAgent(agentKey)"
+                                [style.color]='authrService.agents[agentKey].txtColor'
+                                [style.background-color]='authrService.agents[agentKey].bgColor'
+                                matTooltip='{{authrService.agents[agentKey].name}}'
+                                matTooltipPosition="left"
+                                matTooltipShowDelay="250">
+                                <ng-container *ngIf='authrService.agents[agentKey].useIcon'>
+                                    <mat-icon class="text-large" svgIcon="{{authrService.agents[agentKey].type}}">
+                                    </mat-icon>
+                                </ng-container>
+                                <span *ngIf='!authrService.agents[agentKey].useIcon'
+                                      fxLayoutAlign="space-around center"
+                                      class='text-large'
+                                      [style.color]='authrService.agents[agentKey].txtColor'>
+                                    {{authrService.agents[agentKey].type.charAt(0) | titlecase}}
+                                </span>
+                        </button>
+                        <button mat-mini-fab
+                                (click)="setAgent('OPTIMIZE_DIRECTIVE')"
+                                [style.color]='optAgent.txtColor'
+                                [style.background-color]='optAgent.bgColor'
+                                matTooltip='{{optAgent.name}}'
+                                matTooltipPosition="left"
+                                matTooltipShowDelay="250">
+                                <mat-icon class="text-large" svgIcon="{{optAgent.type}}"></mat-icon>
+                        </button>
+                    </eco-fab-speed-dial-actions>
+                </eco-fab-speed-dial>
+                <span class='label'>
+                    Agent
+                </span>
+            </div>
+
+            <!-- Thing Selector -->
+            <div *ngIf='therblig.parameters.thing !== undefined' fxLayout="column" fxLayoutAlign="space-around center" >
+                <eco-fab-speed-dial direction='down'>
+                    <eco-fab-speed-dial-trigger>
+                      <button mat-fab
+                              (click)='noElementCheck("things")'
+                              [style.background-color]="currentThing.bgColor"
+                              [style.color]="currentThing.txtColor"
+                              fxLayoutAlign="space-around center"
+                              matTooltip='{{currentThing.name}}'
+                              matTooltipPosition="below"
+                              matTooltipShowDelay="250">
+                           <ng-container *ngIf='currentThing.useIcon'>
+                               <mat-icon class="text-larger" svgIcon="{{currentThing.type}}"></mat-icon>
+                           </ng-container>
+                           <span *ngIf='!currentThing.useIcon'
+                                 fxLayoutAlign="space-around center"
+                                 class='text-larger'
+                                 [style.color]="currentThing.txtColor">
+                               {{currentThing.type.charAt(0) | titlecase}}
+                           </span>
+                      </button>
+                    </eco-fab-speed-dial-trigger>
+
+                    <eco-fab-speed-dial-actions>
+                        <button *ngFor="let thingKey of authrService.thingKeys"
+                                mat-mini-fab
+                                (click)="setThing(thingKey)"
+                                [style.color]='authrService.things[thingKey].txtColor'
+                                [style.background-color]='authrService.things[thingKey].bgColor'
+                                matTooltip='{{authrService.things[thingKey].name}}'
+                                matTooltipPosition="left"
+                                matTooltipShowDelay="250">
+                                <ng-container *ngIf='authrService.things[thingKey].useIcon'>
+                                    <mat-icon class="text-large" svgIcon="{{authrService.things[thingKey].type}}">
+                                    </mat-icon>
+                                </ng-container>
+                                <span *ngIf='!authrService.things[thingKey].useIcon'
+                                      fxLayoutAlign="space-around center"
+                                      class='text-large'
+                                      [style.color]='authrService.things[thingKey].txtColor'>
+                                    {{authrService.things[thingKey].type.charAt(0) | titlecase}}
+                                </span>
+                        </button>
+                    </eco-fab-speed-dial-actions>
+                </eco-fab-speed-dial>
+                <span class='label'>
+                    Thing
+                </span>
+            </div>
+
+            <!-- Destination Selector -->
+            <div *ngIf='therblig.parameters.destination !== undefined' fxLayout="column" fxLayoutAlign="space-around center" >
+                <eco-fab-speed-dial direction='down'>
+                    <eco-fab-speed-dial-trigger>
+                      <button mat-fab
+                              (click)='noElementCheck("destinations")'
+                              [style.background-color]="currentDestination.bgColor"
+                              [style.color]="currentDestination.txtColor"
+                              fxLayoutAlign="space-around center"
+                              matTooltip='{{currentDestination.name}}'
+                              matTooltipPosition="below"
+                              matTooltipShowDelay="250">
+                           <ng-container *ngIf='currentDestination.useIcon'>
+                               <mat-icon class="text-larger" svgIcon="{{currentDestination.type}}"></mat-icon>
+                           </ng-container>
+                           <span *ngIf='!currentDestination.useIcon'
+                                 fxLayoutAlign="space-around center"
+                                 class="text-larger"
+                                 [style.color]="currentDestination.txtColor">
+                               {{currentDestination.type.charAt(0) | titlecase}}
+                           </span>
+                      </button>
+                    </eco-fab-speed-dial-trigger>
+
+                    <eco-fab-speed-dial-actions>
+                        <button *ngFor="let destinationKey of authrService.destinationKeys"
+                                mat-mini-fab
+                                (click)="setDestination(destinationKey)"
+                                [style.color]='authrService.destinations[destinationKey].txtColor'
+                                [style.background-color]='authrService.destinations[destinationKey].bgColor'
+                                matTooltip='{{authrService.destinations[destinationKey].name}}'
+                                matTooltipPosition="left"
+                                matTooltipShowDelay="250">
+                                <ng-container *ngIf='authrService.destinations[destinationKey].useIcon'>
+                                    <mat-icon class="text-large" svgIcon="{{authrService.destinations[destinationKey].type}}">
+                                    </mat-icon>
+                                </ng-container>
+                                <span *ngIf='!authrService.destinations[destinationKey].useIcon'
+                                      fxLayoutAlign="space-around center"
+                                      class='text-large'
+                                      [style.color]='authrService.destinations[destinationKey].txtColor'>
+                                    {{authrService.destinations[destinationKey].type.charAt(0) | titlecase}}
+                                </span>
+                        </button>
+                    </eco-fab-speed-dial-actions>
+                </eco-fab-speed-dial>
+                <span class='label'>
+                    Destination
+                </span>
+            </div>
+        </div>
+
+        <div fxFill>
+            <mat-accordion fxFlex class='content'>
+
+                <!-- Duration -->
+                <mat-expansion-panel *ngIf="therblig.showDuration" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title fxLayoutAlign="left center">
+                            <mat-icon *ngIf="therblig.errors.duration.length > 0" class="warning" svgIcon='notset' color='warn' matTooltip="{{therblig.errors.duration}}"></mat-icon>
+                            <mat-icon *ngIf="therblig.errors.duration.length == 0" class="primary-text warning">radio_button_unchecked</mat-icon>
+                            Duration
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <ng-container *ngFor='let agent of therblig.duration | keyvalue; let i=index; trackBy:trackByFn'>
+                      <mat-form-field *ngIf='agent.key !== "Any" && authrService.agents[agent.key].type !== "robot"'>
+                           <input matInput
+                                  type="number"
+                                  placeholder="{{authrService.agents[agent.key].name}}"
+                                  [ngModel]="therblig.duration[agent.key]"
+                                  (ngModelChange)="setDuration($event,agent.key)">
+                           <span matSuffix> sec</span>
+                      </mat-form-field>
+                      <mat-form-field *ngIf='agent.key == "Any"'>
+                        <input matInput
+                               type="number"
+                               placeholder="All Agents"
+                               [ngModel]="therblig.duration['Any']"
+                               (ngModelChange)="setDuration($event,'Any')">
+                           <span matSuffix> sec</span>
+                      </mat-form-field>
+                    </ng-container>
+
+                    <mat-error *ngIf='therblig.errors.duration.length > 0'>{{therblig.errors.duration}}</mat-error>
+
+                </mat-expansion-panel>
+
+                <!-- if not a rest or hold. Might have to change with optimization -->
+                <!-- <mat-expansion-panel *ngIf="!therblig.showDuration" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel-header>
+                      <mat-panel-title fxLayoutAlign="left center">
+                          <mat-icon *ngIf="therblig.errors.duration.length > 0" class="primary-text warning">radio_button_unchecked</mat-icon>
+                          Duration
+                      </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  0
+                </mat-expansion-panel> -->
+
+
+                <!-- Cost -->
+                <mat-expansion-panel *ngIf="therblig.showCost" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title fxLayoutAlign="left center">
+                          <mat-icon *ngIf="therblig.errors.cost.length > 0" class="warning" svgIcon='notset' color='warn' matTooltip='{{therblig.errors.cost}}'></mat-icon>
+                          <mat-icon *ngIf="therblig.errors.cost.length == 0" class="primary-text warning">radio_button_unchecked</mat-icon>
+                            Cost
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <mat-form-field *ngFor='let agent of therblig.cost | keyvalue; let i=index; trackBy:trackByFn'>
+                      <input matInput
+                             type="number"
+                             placeholder="{{authrService.agents[agent.key].name}}"
+                             [ngModel]="therblig.cost[agent.key]"
+                             (ngModelChange)="setCost($event,agent.key)"/>
+                    </mat-form-field>
+                    <mat-error *ngIf='therblig.errors.cost.length > 0'>{{therblig.errors.cost}}</mat-error>
+
+                </mat-expansion-panel>
+
+                <!-- Arm -->
+                <mat-expansion-panel *ngIf="therblig.settable.indexOf('arm') > -1" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title fxLayoutAlign="left center">
+                          <mat-icon *ngIf="therblig.errors.arm.length > 0" class="warning" svgIcon='notset' color='warn' matTooltip='{{therblig.errors.arm}}'></mat-icon>
+                          <mat-icon *ngIf="therblig.errors.arm.length == 0" class="primary-text warning">radio_button_unchecked</mat-icon>
+                            Arm
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <mat-form-field *ngIf="therblig.parameters.agent.length > 0">
+                        <mat-select placeholder="Arm"
+                                    [ngModel]="therblig.parameters.arm"
+                                    (ngModelChange)="setArm($event)">
+                            <mat-option *ngFor="let arm of currentAgent.arms; let i=index; trackBy:trackByFn"
+                                        [value]="arm">
+                                {{arm}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-error *ngIf="therblig.errors.arm">{{therblig.errors.arm}}</mat-error>
+
+                </mat-expansion-panel>
+
+                <!-- Effort -->
+                <mat-expansion-panel *ngIf="therblig.settable.indexOf('effort') > -1" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title fxLayoutAlign="left center">
+                          <mat-icon *ngIf="therblig.errors.effort.length > 0" class="warning" svgIcon='notset' color='warn' matTooltip='{{therblig.errors.effort}}'></mat-icon>
+                          <mat-icon *ngIf="therblig.errors.effort.length == 0" class="primary-text warning">radio_button_unchecked</mat-icon>
+                            Effort
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <mat-form-field>
+                      <input matInput
+                             type="number"
+                             min="0"
+                             max="1"
+                             step="0.1"
+                             placeholder="Effort"
+                             [ngModel]="therblig.parameters.effort"
+                             (ngModelChange)="setEffort($event)"/>
+                    </mat-form-field>
+                    <mat-error *ngIf='therblig.errors.effort.length > 0'>{{therblig.errors.eff}}</mat-error>
+
+                </mat-expansion-panel>
+
+                <!-- Verification -->
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title fxLayoutAlign="left center">
+                          <mat-icon *ngIf="verificationErrorCount > 0" class="warning" svgIcon='notset' color='warn' matTooltip='Verification therblig.errors'></mat-icon>
+                          <mat-icon *ngIf="verificationErrorCount == 0" class="primary-text warning">radio_button_unchecked</mat-icon>
+                            Verification
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-list *ngFor='let error of verificationErrors'>
+                      <mat-list-item>
+                        {{error}}
+                      </mat-list-item>
+                    </mat-list>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+        <button class="container" mat-raised-button color="warn" (click)="deleteTherblig(therbligKey)"> Delete </button>
+    <!-- <div fxFlex='grow'></div> -->
+    </ng-container>
+</div>

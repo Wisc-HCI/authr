@@ -1,0 +1,30 @@
+<div class="container">
+<table mat-table [dataSource]="authrService.tof_table" class="element mat-elevation-z8">
+
+  <!-- Index Column -->
+  <ng-container matColumnDef="index" sticky>
+        <mat-header-cell *matHeaderCellDef> Start \ Stop </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{authrService.destinations[element.index].name}} </mat-cell>
+  </ng-container>
+
+  <!-- Columns for each destination -->
+  <ng-container *ngFor="let destination of authrService.destinationKeys" matColumnDef="{{destination}}">
+        <mat-header-cell fxLayoutAlign="center center" *matHeaderCellDef> {{authrService.destinations[destination].name}} </mat-header-cell>
+        <mat-cell class="custom-cell" *matCellDef="let element" fxLayoutAlign="center center">
+          <ng-container [ngSwitch]="element[destination]">
+            <!-- the same view can be shown in more than one case -->
+            <mat-spinner *ngSwitchCase="'pending'" [diameter]='20' (click)="requestUpdate(element.index,destination)"></mat-spinner>
+            <mat-error *ngSwitchCase="'invalid'" (click)="requestUpdate(element.index,destination)">Invalid</mat-error>
+            <mat-error *ngSwitchCase="'error'" (click)="requestUpdate(element.index,destination)">Robot Missing</mat-error>
+            <span *ngSwitchCase="0" class='zero'>N/A</span>
+            <!--default case when there are no matches -->
+            <span *ngSwitchDefault>{{element[destination] | number:'1.1-3' }}</span>
+          </ng-container>
+        </mat-cell>
+  </ng-container>
+
+  <mat-header-row fxLayoutAlign="center center" class="row-index" *matHeaderRowDef="['index'].concat(authrService.destinationKeys)"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: ['index'].concat(authrService.destinationKeys);"></mat-row>
+
+</table>
+</div>

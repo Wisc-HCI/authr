@@ -1,0 +1,142 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-around center">
+    <span>General Setup</span>
+</mat-toolbar>
+<mat-divider></mat-divider>
+<div class="content-flex setup-container">
+    <mat-accordion>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Plan
+                </mat-panel-title>
+                <mat-panel-description>
+                    Name, Upload, and Download Plans
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <div class="form-container" fxLayoutAlign="space-around center">
+                <mat-form-field>
+                    <input matInput placeholder="Plan Name" [(ngModel)]="authrService.name"/>
+                </mat-form-field>
+                <span>Time Weighting:
+                    <mat-slider [max]="1" [min]="0" [step]="0.01" [tickInterval]="0.01" [(ngModel)]="authrService.timeweight">
+                    </mat-slider>
+                    <span class='weight mat-elevation-z2'>
+                        {{authrService.timeweight | percent}}
+                    </span>
+                </span>
+                <span>Cost Weighting:
+                    <mat-slider [max]="1" [min]="0" [step]="0.01" [tickInterval]="0.01" [(ngModel)]="authrService.costweight">
+                    </mat-slider>
+                    <span class='weight mat-elevation-z2'>
+                        {{authrService.costweight | percent}}
+                    </span>
+                </span>
+            </div>
+            <div class="form-container" fxLayoutAlign="space-around center">
+              <mat-slide-toggle
+                  [color]="'accent'"
+                  [checked]='authrService.debugging'
+                  [(ngModel)]="authrService.debugging">
+                  Show Debug
+              </mat-slide-toggle>
+
+              <span>
+                  <button matInput type="button" color="primary" mat-raised-button (click)="FileInput.click()">Upload</button>
+                  <input hidden type="file" accept=".json" #FileInput (change)="authrService.uploadPlan($event)" />
+                  <button matInput mat-raised-button color="primary" (click)="authrService.downloadPlan($event)">Download</button>
+              </span>
+            </div>
+
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    ROS
+                </mat-panel-title>
+                <mat-panel-description>
+                    Backend Configuration
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <div class="form-container" fxLayoutAlign="space-around center">
+                <mat-form-field>
+                    <mat-label>Fixed Frame</mat-label>
+                    <span class='primary-text' matPrefix>http://</span>
+                    <input matInput placeholder="Address" [(ngModel)]="authrService.address" />
+                    <mat-hint>e.g. http://address.location.edu:9090</mat-hint>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Robot" [ngModel]="authrService.robot" disabled />
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Fixed Frame</mat-label>
+                    <span class='primary-text' matPrefix>/</span>
+                    <input matInput [(ngModel)]="authrService.fixedFrame"/>
+                    <mat-hint>e.g. /base_link</mat-hint>
+                </mat-form-field>
+
+                <button matInput
+                        mat-raised-button
+                        color="warn"
+                         *ngIf='!authrService.connected'
+                        (click)='authrService.connect(authrService.address)'>
+                    Connect
+                </button>
+                <button matInput
+                        mat-raised-button
+                        color="accent"
+                         *ngIf='authrService.connected'
+                        (click)='authrService.connect(authrService.address)'>
+                    Connected
+                </button>
+
+            </div>
+
+        </mat-expansion-panel>
+
+        <mat-expansion-panel *ngIf='authrService.debugging'>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Debug
+                </mat-panel-title>
+                <mat-panel-description>
+                    Helpful Tools For Debugging
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <mat-tree [dataSource]="treeSource" [treeControl]="treeControl" class="plan-tree">
+              <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+                <li class="mat-tree-node">
+                  <button mat-icon-button disabled></button>
+                  {{node.name}}
+                </li>
+              </mat-tree-node>
+              <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+                <li>
+                  <div class="mat-tree-node">
+                    <button mat-icon-button matTreeNodeToggle
+                            [attr.aria-label]="'toggle ' + node.name">
+                      <mat-icon class="mat-icon-rtl-mirror">
+                        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                      </mat-icon>
+                    </button>
+                    {{node.name}}
+                  </div>
+                  <ul [class.plan-tree-invisible]="!treeControl.isExpanded(node)">
+                    <ng-container matTreeNodeOutlet></ng-container>
+                  </ul>
+                </li>
+              </mat-nested-tree-node>
+            </mat-tree>
+
+            <!-- <pre>{{authrService.plan | json}}</pre> -->
+
+        </mat-expansion-panel>
+
+    </mat-accordion>
+</div>

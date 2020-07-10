@@ -1,0 +1,4 @@
+string agent  # identifier provided on agent creation
+string endeffector
+---
+bool success

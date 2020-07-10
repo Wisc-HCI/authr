@@ -1,0 +1,15 @@
+<launch>
+
+  <arg name="robot"/>
+  <arg name="simulated" default='false'/>
+  <arg name='verifier' default='standard'/>  <!-- Set to 'advanced' for a newer version -->
+
+  <include file="$(find authr)/launch/backend.launch">
+    <arg name="robot" value="$(arg robot)"/>
+    <arg name="simulated" value="$(arg simulated)"/>
+    <arg name='verifier' value="$(arg verifier)"/>
+  </include>
+
+  <include file="$(find authr)/launch/frontend.launch"/>
+
+</launch>

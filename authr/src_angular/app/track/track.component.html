@@ -1,0 +1,13 @@
+<div fxLayout='row'>
+          <div *ngFor='let therblig of data'
+               class="therblig {{therblig.therblig.type}}"
+               [class.mat-elevation-z6]="authrService.focused == therblig.therblig.eid"
+               [class.mat-elevation-z2]="authrService.focused != therblig.therblig.eid"
+               [class.running]='isActive(therblig.therblig.eid)'
+               fxLayoutAlign="space-around center"
+               (click)="handleClick($event,therblig.therblig.eid)"
+               [ngStyle]="{'margin-left.px': therblig.gap,'width.px': therblig.width}">
+               {{therblig.therblig.type | replaceUnderscores | titlecase}}
+               <!-- <ng-container *ngIf="isActive(therblig.therblig.eid)">-Running</ng-container> -->
+           </div>
+  </div>

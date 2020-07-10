@@ -1,0 +1,362 @@
+{
+  "tasks": {
+    "0.3-task-ebdb60c5-eeb9-487a-8960-ea7532ab169e": {
+      "timestamp": 1548454815.794039,
+      "therbligs": [
+        "0.3-therblig-c1ce6c2d-7873-4ff4-b950-7abc9005a4f6",
+        "0.3-therblig-56e5869a-5cdc-46d0-93a6-67a468b64c0f",
+        "0.3-therblig-55652b3c-8187-4f1a-8e67-174b1660bcc4",
+        "0.3-therblig-023ee55c-3cc4-4c5a-8f42-6c0f14ecab73",
+        "0.3-therblig-a47551be-f2c2-4d52-9166-d8c0477a1991",
+        "0.3-therblig-bcd71e1a-0794-4973-bb67-3e1a16656f4f"
+      ],
+      "name": "My First Task",
+      "repeat": 3
+    }
+  },
+  "tofs": {
+    "0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85_0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85": 0,
+    "0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85_0.3-destination-54632724-2db3-4643-86df-3f79cef452c2": 3.8,
+    "0.3-destination-54632724-2db3-4643-86df-3f79cef452c2_0.3-destination-54632724-2db3-4643-86df-3f79cef452c2": 0,
+    "0.3-destination-54632724-2db3-4643-86df-3f79cef452c2_0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85": 1.6
+  },
+  "therbligs": {
+    "0.3-therblig-023ee55c-3cc4-4c5a-8f42-6c0f14ecab73": {
+      "cost": {
+        "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": null
+      },
+      "allowed": [
+        "release_load",
+        "transport_loaded",
+        "hold"
+      ],
+      "duration": {
+        "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": null
+      },
+      "physical": true,
+      "errors": {
+        "thing": null,
+        "cost": "One or more agents do not have costs defined.",
+        "duration": "One or more agents do not have durations defined.",
+        "effort": "Value not set.",
+        "arm": null,
+        "agent": null,
+        "general": "3"
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85",
+        "effort": null,
+        "arm": "Not Applicable",
+        "agent": "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71"
+      },
+      "type": "grasp",
+      "tooltip": "Grasp a thing with a specified effort.",
+      "sets": {
+        "grasping": true
+      },
+      "requires": {
+        "grasping": false,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-a47551be-f2c2-4d52-9166-d8c0477a1991": {
+      "cost": {
+        "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": null
+      },
+      "allowed": [
+        "transport_loaded",
+        "hold",
+        "release_load"
+      ],
+      "duration": {
+        "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": null
+      },
+      "physical": true,
+      "errors": {
+        "thing": null,
+        "cost": "One or more agents do not have costs defined.",
+        "duration": "One or more agents do not have durations defined.",
+        "destination": null,
+        "effort": "Value not set.",
+        "arm": null,
+        "agent": null,
+        "general": "3"
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85",
+        "destination": "0.3-destination-54632724-2db3-4643-86df-3f79cef452c2",
+        "effort": null,
+        "arm": "Not Applicable",
+        "agent": "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71"
+      },
+      "type": "transport_loaded",
+      "tooltip": "Transport a loaded gripper or hand to a specified location.",
+      "sets": {
+        "thing_destination": "0.3-destination-54632724-2db3-4643-86df-3f79cef452c2",
+        "agent_destination": "0.3-destination-54632724-2db3-4643-86df-3f79cef452c2"
+      },
+      "requires": {
+        "grasping": true,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-bcd71e1a-0794-4973-bb67-3e1a16656f4f": {
+      "cost": {
+        "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": null
+      },
+      "allowed": [
+        "grasp",
+        "transport_empty",
+        "rest"
+      ],
+      "duration": {
+        "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": null
+      },
+      "physical": true,
+      "errors": {
+        "agent": null,
+        "general": "2",
+        "thing": null,
+        "cost": "One or more agents do not have costs defined.",
+        "duration": "One or more agents do not have durations defined.",
+        "arm": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85",
+        "arm": "Not Applicable",
+        "agent": "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71"
+      },
+      "type": "release_load",
+      "tooltip": "Release hold of a gripper or hand.",
+      "sets": {
+        "grasping": false
+      },
+      "requires": {
+        "grasping": true,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-56e5869a-5cdc-46d0-93a6-67a468b64c0f": {
+      "cost": {
+        "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": null
+      },
+      "allowed": [
+        "transport_empty",
+        "rest",
+        "grasp"
+      ],
+      "duration": {
+        "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": null
+      },
+      "physical": true,
+      "errors": {
+        "destination": null,
+        "agent": null,
+        "general": "2",
+        "cost": "One or more agents do not have costs defined.",
+        "duration": "One or more agents do not have durations defined.",
+        "arm": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "destination": "0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85",
+        "arm": "Not Applicable",
+        "agent": "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71"
+      },
+      "type": "transport_empty",
+      "tooltip": "Transport an empty gripper or hand to a specified location.",
+      "sets": {
+        "agent_destination": "0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85"
+      },
+      "requires": {
+        "grasping": false
+      }
+    },
+    "0.3-therblig-c1ce6c2d-7873-4ff4-b950-7abc9005a4f6": {
+      "cost": {
+        "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": null
+      },
+      "allowed": [
+        "rest",
+        "transport_empty",
+        "grasp"
+      ],
+      "duration": {
+        "Any": null
+      },
+      "physical": true,
+      "errors": {
+        "destination": null,
+        "agent": null,
+        "general": "2",
+        "cost": "One or more agents do not have costs defined.",
+        "duration": "One or more agents do not have durations defined.",
+        "arm": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "destination": "0.3-destination-54632724-2db3-4643-86df-3f79cef452c2",
+        "arm": "Not Applicable",
+        "agent": "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71"
+      },
+      "type": "rest",
+      "tooltip": "Wait for a specified duration.",
+      "sets": {},
+      "requires": {
+        "grasping": false,
+        "agent_destination": "0.3-destination-54632724-2db3-4643-86df-3f79cef452c2"
+      }
+    },
+    "0.3-therblig-55652b3c-8187-4f1a-8e67-174b1660bcc4": {
+      "cost": {
+        "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": null
+      },
+      "allowed": [
+        "hold",
+        "transport_loaded",
+        "release_load"
+      ],
+      "duration": {
+        "Any": null
+      },
+      "physical": true,
+      "errors": {
+        "thing": null,
+        "cost": "One or more agents do not have costs defined.",
+        "duration": "One or more agents do not have durations defined.",
+        "effort": "Value not set.",
+        "arm": null,
+        "agent": null,
+        "general": "3"
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85",
+        "effort": null,
+        "arm": "Not Applicable",
+        "agent": "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71"
+      },
+      "type": "hold",
+      "tooltip": "Hold a thing for a specified duration.",
+      "sets": {},
+      "requires": {
+        "grasping": true,
+        "agent_thing": "MATCH"
+      }
+    }
+  },
+  "agents": {
+    "0.3-agent-7b45661d-845c-444c-a4fe-4059fe4dad71": {
+      "bgColor": "rgb(113,111,141)",
+      "displayType": "Human",
+      "displayName": "Fred",
+      "name": "Fred",
+      "useIcon": true,
+      "color": {
+        "r": 113,
+        "b": 141,
+        "g": 111
+      },
+      "timestamp": 1548454889.687492,
+      "type": "human",
+      "txtColor": "rgb(255,255,255)",
+      "arms": [
+        "Not Applicable"
+      ]
+    }
+  },
+  "cost_weight": 0.5,
+  "destinations": {
+    "0.3-destination-54632724-2db3-4643-86df-3f79cef452c2": {
+      "useIcon": false,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 106,
+        "b": 210,
+        "g": 125
+      },
+      "timestamp": 1548454910.785991,
+      "txtColor": "rgb(255,255,255)",
+      "bgColor": "rgb(106,125,210)",
+      "locked": false,
+      "displayName": "Goal",
+      "name": "Goal",
+      "displayType": "Goal",
+      "position": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "type": "Goal"
+    },
+    "0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 23,
+        "b": 162,
+        "g": 169
+      },
+      "timestamp": 1548454894.701407,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "destination",
+      "bgColor": "rgb(23,169,162)",
+      "locked": true,
+      "displayName": "Location:My Ball",
+      "name": "Location:My Ball",
+      "displayType": "Unconfigured Thing",
+      "position": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "type": "loc-cube"
+    }
+  },
+  "name": "Valid Plan",
+  "things": {
+    "0.3-thing-1341ef79-3410-4bb3-91d9-ecf81446db85": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 23,
+        "b": 162,
+        "g": 169
+      },
+      "timestamp": 1548454894.701407,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(23,169,162)",
+      "size": 1,
+      "displayName": "My Ball",
+      "name": "My Ball",
+      "displayType": "Unconfigured Thing",
+      "position": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "type": "cube"
+    }
+  },
+  "version": "0.3",
+  "time_weight": 0.5,
+  "task_keys": [
+    "0.3-task-ebdb60c5-eeb9-487a-8960-ea7532ab169e"
+  ]
+}

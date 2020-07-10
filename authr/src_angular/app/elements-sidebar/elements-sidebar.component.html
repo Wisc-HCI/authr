@@ -1,0 +1,32 @@
+<mat-tab-group mat-stretch-tabs class="stretched-tabs content-flex">
+  <mat-tab>
+      <ng-template mat-tab-label>
+         Therbligs
+      </ng-template>
+      <ng-template matTabContent>
+          <div class='content-flex element-container'
+               dragula="THERBLIG" id="sidebar"
+               [(dragulaModel)]="this.authrService.primitiveKeys">
+               <therblig-item *ngFor="let primitive of authrService.primitiveKeys"
+                              id={{primitive}}
+                              [therbligKey]="primitive">
+               </therblig-item>
+          </div>
+      </ng-template>
+  </mat-tab>
+  <mat-tab>
+      <ng-template mat-tab-label>
+         Macros
+      </ng-template>
+      <ng-template matTabContent>
+          <div class='content-flex element-container'
+               dragula="THERBLIG" id="sidebar"
+               [(dragulaModel)]="this.authrService.macroKeys">
+               <macro-item *ngFor="let macro of authrService.macroKeys"
+                              id={{macro}}
+                              [macroKey]="macro">
+               </macro-item>
+          </div>
+      </ng-template>
+  </mat-tab>
+</mat-tab-group>

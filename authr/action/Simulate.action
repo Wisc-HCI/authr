@@ -1,0 +1,31 @@
+# Input Command
+float64 start_time
+string mode   # '' or 'simulate' = simulate
+              # 'reset' = reset ws to initial state
+              # 'pause' = pause simulation
+
+---
+# Result
+string msg
+
+int8 ERROR = -1
+int8 INVALID = 0
+int8 FINISHED = 1
+int8 PREEMPTED = -2
+int8 status
+
+---
+# Feedback
+float64 elapsed_time
+float64 percent_complete
+string agent_therblig_map
+
+int8 PREEMPTED = -3
+int8 BAD_AGENT_KEY = -2
+int8 ERROR = -1
+int8 PENDING = 0
+int8 RUNNING = 1
+int8 TRANSLATING = 2
+int8 INITIALIZING = 3
+int8 FINISHED = 2
+int8 status

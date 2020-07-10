@@ -1,0 +1,89 @@
+<div class="text">
+  <mat-toolbar color='primary'>
+    <span>{{type | replaceUnderscores | titlecase}}</span>
+  </mat-toolbar>
+  <img class="therblig-animation" [src]="imgsrc">
+  <h4 class='element mat-elevation-z2'>
+    {{therbligPrimitive.tooltip}}
+  </h4>
+  <div fxFill>
+      <mat-accordion fxFlex class='content'>
+          <!-- Allowed -->
+          <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                  <mat-panel-title fxLayoutAlign="left center">
+                      Allowed
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div>
+                The following therbligs are valid follow-ups to this therblig for the agent assigned:
+              </div>
+              <mat-list dense *ngFor='let allowed of therbligPrimitive.allowed'>
+                <mat-list-item>
+                  <mat-icon matListIcon>radio_button_unchecked</mat-icon>
+                  {{allowed | replaceUnderscores | titlecase}}
+                </mat-list-item>
+              </mat-list>
+          </mat-expansion-panel>
+
+          <!-- Sets -->
+          <mat-expansion-panel *ngIf='setsSize > 0'>
+              <mat-expansion-panel-header>
+                  <mat-panel-title fxLayoutAlign="left center">
+                      Sets
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div>
+                This therblig sets the following agent and thing configurations:
+              </div>
+              <br/>
+              <mat-list dense *ngFor='let set of therbligPrimitive.sets | keyvalue'>
+                <mat-list-item *ngIf='set.key == "grasping"'>
+                  <mat-icon matListIcon>radio_button_unchecked</mat-icon>
+                  Sets the agent's grasping configuration to {{set.value}}
+                </mat-list-item>
+                <mat-list-item *ngIf='set.key == "agent_destination"'>
+                  <mat-icon matListIcon>radio_button_unchecked</mat-icon>
+                  Sets the agent to the specified destination
+                </mat-list-item>
+                <mat-list-item *ngIf='set.key == "thing_destination"'>
+                  <mat-icon matListIcon>radio_button_unchecked</mat-icon>
+                  Sets the thing to the specified destination
+                </mat-list-item>
+              </mat-list>
+          </mat-expansion-panel>
+
+          <!-- Requires -->
+          <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                  <mat-panel-title fxLayoutAlign="left center">
+                      Requires
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <div>
+                This therblig requires the following agent and thing configurations:
+              </div>
+              <br/>
+              <mat-list dense *ngFor='let require of therbligPrimitive.requires | keyvalue'>
+                <mat-list-item *ngIf='require.key == "grasping"'>
+                  <mat-icon matListIcon>radio_button_unchecked</mat-icon>
+                  Requires the agent's grasping configuration to be {{require.value}}
+                </mat-list-item>
+                <mat-list-item *ngIf='require.key == "agent_destination"'>
+                  <mat-icon matListIcon>radio_button_unchecked</mat-icon>
+                  Requires the agent to be at the specified destination
+                </mat-list-item>
+                <mat-list-item *ngIf='require.key == "thing_destination"'>
+                  <mat-icon matListIcon>radio_button_unchecked</mat-icon>
+                  Requires the thing to be at the specified destination
+                </mat-list-item>
+                <mat-list-item *ngIf='require.key == "agent_thing"'>
+                  <mat-icon matListIcon>radio_button_unchecked</mat-icon>
+                  Requires the agent to be grasping the specified thing
+                </mat-list-item>
+                <br/>
+              </mat-list>
+          </mat-expansion-panel>
+      </mat-accordion>
+  </div>
+</div>

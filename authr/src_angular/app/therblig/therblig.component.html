@@ -1,0 +1,65 @@
+<ng-container *ngIf='therblig'>
+  <div class="mat-elevation-z2 {{therblig.type}}"
+       [class.therblig-preview]="preview"
+       [class.therblig]="!preview"
+       [class.mat-elevation-z6]="authrService.focused == therbligKey"
+       fxFlex fxLayout="row" fxLayoutAlign="space-between center"
+       (click)='$event.stopPropagation();goToDetail($event)'>
+      <span *ngIf='isPrimitive || preview || therblig.errors.general == null; else error'>
+          <span *ngIf="therblig.physical && !therblig.cognitive" fxLayoutAlign="left center">
+              <mat-icon class="therblig-icon">radio_button_unchecked</mat-icon>
+          </span>
+          <span *ngIf="!therblig.physical && therblig.cognitive" fxLayoutAlign="left center">
+              <mat-icon class="therblig-icon">radio_button_checked</mat-icon>
+          </span>
+          <span *ngIf="therblig.physical && therblig.cognitive" fxLayoutAlign="left center">
+              <mat-icon class="therblig-icon">brightness_1</mat-icon>
+          </span>
+      </span>
+      <ng-template #error>
+        <div mat-card-avatar
+             fxLayoutAlign="space-around center"
+             class="error mat-elevation-z2"
+             matTooltip='{{therblig.errors.general}} Error{{therblig.errors.general > 1 ? "s" : ""}}'
+             matTooltipPosition="below"
+             matTooltipShowDelay="250">
+             <span class='error-text'>
+                 {{therblig.errors.general}}
+             </span>
+        </div>
+      </ng-template>
+      <span fxFlex>
+      {{therblig.type | replaceUnderscores | titlecase}}
+      </span>
+      <span *ngIf='!isPrimitive' fxLayoutAlign="space-between center" fxLayoutGap='5px'>
+          <ng-container *ngIf='therblig.parameters.agent == undefined || therblig.parameters.agent == "OPTIMIZE_DIRECTIVE"; else agent'>
+              <element-icon [type]='"Agent"'
+                            [size]='"small"'
+                            [element]='optAgent'>
+              </element-icon>
+          </ng-container>
+
+          <ng-template #agent>
+              <element-icon [type]='"Agent"'
+                            [size]='"small"'
+                            [element]='therblig.parameters.agent ? authrService.getAgentById(therblig.parameters.agent) : notsetAgent'>
+              </element-icon>
+          </ng-template>
+
+          <ng-container *ngIf='therblig.parameters.thing !== undefined && authrService.things'>
+              <element-icon [type]='"Thing"'
+                            [size]='"small"'
+                            [element]='therblig.parameters.thing ? authrService.getThingById(therblig.parameters.thing) : notsetThing'>
+              </element-icon>
+          </ng-container>
+
+          <ng-container *ngIf='therblig.parameters.destination !== undefined && authrService.destinations'>
+              <element-icon [type]='"Destination"'
+                            [size]='"small"'
+                            [element]='therblig.parameters.destination ? authrService.getDestinationById(therblig.parameters.destination) : notsetDestination'>
+              </element-icon>
+          </ng-container>
+
+      </span>
+  </div>
+<ng-container>

@@ -1,0 +1,16 @@
+string agent  # identifier provided on agent creation
+
+uint8 TYPE_ARM = 0  # use pose variant
+uint8 TYPE_GRIPPER = 1      # use effort variant
+uint8 motion_type
+
+---
+authr/EulerPose pose
+float64 effort
+
+# negated logic due to multi-error state
+int8 INVALID = -1
+int8 PLANNER_IN_USE = -2   # service locked, planner already in use
+int8 VALID = 0
+int8 BAD_AGENT_KEY = -3
+int8 status

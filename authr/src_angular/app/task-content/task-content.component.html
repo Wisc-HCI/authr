@@ -1,0 +1,10 @@
+<div fxLayout="row" class="content-flex container" (click)=clearDetail($event)>
+  <div fxLayout="row" [(dragulaModel)]="authrService.taskKeys" dragula="TASK">
+    <task-item class='task' *ngFor='let taskKey of authrService.taskKeys'
+               [taskKey]="taskKey">
+    </task-item>
+  </div>
+  <div class="task-content">
+      <button mat-stroked-button color="accent" (click)="authrService.addTask()" class="button">Add task</button>
+  </div>
+</div>

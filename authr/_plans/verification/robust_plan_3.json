@@ -1,0 +1,1165 @@
+{
+  "tasks": {
+    "0.3-task-f2732fc8-e34a-45a6-95df-7eda147f11bf": {
+      "timestamp": 1553019971.489472,
+      "therbligs": [
+        "0.3-therblig-af4f4377-84b4-4902-b1d5-4490ff5f5e8f",
+        "0.3-therblig-2eba1414-e067-4d29-be77-c98d46814156",
+        "0.3-therblig-5cbca2f5-284d-4063-875c-64e461fb00a0",
+        "0.3-therblig-ce265bb2-b056-4378-adc7-8b554a030256",
+        "0.3-therblig-4d81a250-832d-4db0-ac3b-6510fd8fd30e",
+        "0.3-therblig-da482105-ca64-45bb-ba6c-20c1090c2536",
+        "0.3-therblig-b37cc0d7-91fe-47b7-8497-efcbe213f36e",
+        "0.3-therblig-bab72f84-6cd4-49d2-9886-dc8e06546271"
+      ],
+      "id": "0.3-task-f2732fc8-e34a-45a6-95df-7eda147f11bf",
+      "repeat": 2,
+      "name": "New Task"
+    },
+    "0.3-task-493193e9-d8a6-43f3-8e61-2dbeba76c9d8": {
+      "timestamp": 1553019428.488541,
+      "therbligs": [
+        "0.3-therblig-26f36222-4288-48e0-ba85-80377175f95c",
+        "0.3-therblig-38898fa4-c92c-4f8d-a76f-9efd7ca1d2f2",
+        "0.3-therblig-9c01686b-fc66-4f7e-9884-feab8b96d6bf",
+        "0.3-therblig-3fa5a440-2f1e-4735-b776-cfc70b604922",
+        "0.3-therblig-185d588b-427f-40de-b066-c6fa9642bb47"
+      ],
+      "id": "0.3-task-493193e9-d8a6-43f3-8e61-2dbeba76c9d8",
+      "repeat": 0,
+      "name": "My First Task"
+    }
+  },
+  "tofs": {
+    "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918_0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 4.423568952,
+    "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8_0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 4.096345539,
+    "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938_0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 4.417285284,
+    "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710_0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 1.769389512,
+    "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4_0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 5.575883466,
+    "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4_0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 1.565848086,
+    "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918_0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 0,
+    "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8_0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1.566054534,
+    "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8_0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 6.088762185,
+    "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710_0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 4.366106865,
+    "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4_0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 1.7619870610000001,
+    "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918_0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 2.586990501,
+    "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710_0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 4.598188649,
+    "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938_0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 0,
+    "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8_0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 4.357278168,
+    "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8_0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 6.253014393,
+    "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710_0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 5.756777002,
+    "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4_0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 0,
+    "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4_0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 4.667097151,
+    "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938_0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 4.556188853,
+    "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918_0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 1.769407185,
+    "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4_0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1.955687568,
+    "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710_0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 0,
+    "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99_0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 0,
+    "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99_0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 5.346305614,
+    "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8_0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 0,
+    "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938_0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 3.578490736,
+    "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918_0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 2.063653119,
+    "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99_0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 4.594387854,
+    "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918_0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 3.614969758,
+    "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99_0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1.956580557,
+    "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99_0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 6.969773325,
+    "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938_0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 3.639012727,
+    "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938_0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 3.618567813,
+    "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99_0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 6.018513431,
+    "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710_0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 4.385236771
+  },
+  "therbligs": {
+    "0.3-therblig-da482105-ca64-45bb-ba6c-20c1090c2536": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "thing",
+        "arm",
+        "effort",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "release_load",
+        "transport_loaded",
+        "hold"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-da482105-ca64-45bb-ba6c-20c1090c2536",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "thing": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "effort": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+        "effort": 1,
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "grasp",
+      "tooltip": "Grasp a thing with a specified effort.",
+      "sets": {
+        "grasping": true
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": false,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-b37cc0d7-91fe-47b7-8497-efcbe213f36e": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "thing",
+        "destination",
+        "arm",
+        "effort",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "transport_loaded",
+        "hold",
+        "release_load"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-b37cc0d7-91fe-47b7-8497-efcbe213f36e",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "destination": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "thing": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "effort": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+        "destination": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+        "effort": 1,
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "transport_loaded",
+      "tooltip": "Transport a loaded gripper or hand to a specified location.",
+      "sets": {
+        "thing_destination": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+        "agent_destination": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918"
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": true,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-5cbca2f5-284d-4063-875c-64e461fb00a0": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "thing",
+        "destination",
+        "arm",
+        "effort",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "transport_loaded",
+        "hold",
+        "release_load"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-5cbca2f5-284d-4063-875c-64e461fb00a0",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "destination": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "thing": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "effort": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+        "destination": "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8",
+        "effort": 1,
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "transport_loaded",
+      "tooltip": "Transport a loaded gripper or hand to a specified location.",
+      "sets": {
+        "thing_destination": "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8",
+        "agent_destination": "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8"
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": true,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-af4f4377-84b4-4902-b1d5-4490ff5f5e8f": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 3
+      },
+      "settable": [
+        "agent",
+        "destination",
+        "arm",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "transport_empty",
+        "rest",
+        "grasp"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-af4f4377-84b4-4902-b1d5-4490ff5f5e8f",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "destination": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "destination": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "transport_empty",
+      "tooltip": "Transport an empty gripper or hand to a specified location.",
+      "sets": {
+        "agent_destination": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918"
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": false
+      }
+    },
+    "0.3-therblig-3fa5a440-2f1e-4735-b776-cfc70b604922": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "thing",
+        "destination",
+        "arm",
+        "effort",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "transport_loaded",
+        "hold",
+        "release_load"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-3fa5a440-2f1e-4735-b776-cfc70b604922",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "destination": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "thing": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "effort": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710",
+        "destination": "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938",
+        "effort": 1,
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "transport_loaded",
+      "tooltip": "Transport a loaded gripper or hand to a specified location.",
+      "sets": {
+        "thing_destination": "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938",
+        "agent_destination": "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938"
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": true,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-38898fa4-c92c-4f8d-a76f-9efd7ca1d2f2": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "destination",
+        "arm",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "transport_empty",
+        "rest",
+        "grasp"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-38898fa4-c92c-4f8d-a76f-9efd7ca1d2f2",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "destination": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "destination": "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710",
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "transport_empty",
+      "tooltip": "Transport an empty gripper or hand to a specified location.",
+      "sets": {
+        "agent_destination": "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710"
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": false
+      }
+    },
+    "0.3-therblig-ce265bb2-b056-4378-adc7-8b554a030256": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 2
+      },
+      "settable": [
+        "agent",
+        "thing",
+        "arm",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "grasp",
+        "transport_empty",
+        "rest"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-ce265bb2-b056-4378-adc7-8b554a030256",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "thing": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "release_load",
+      "tooltip": "Release hold of a gripper or hand.",
+      "sets": {
+        "grasping": false
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": true,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-26f36222-4288-48e0-ba85-80377175f95c": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "destination",
+        "arm",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "transport_empty",
+        "rest",
+        "grasp"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-26f36222-4288-48e0-ba85-80377175f95c",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "destination": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "destination": "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8",
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "transport_empty",
+      "tooltip": "Transport an empty gripper or hand to a specified location.",
+      "sets": {
+        "agent_destination": "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8"
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": false
+      }
+    },
+    "0.3-therblig-185d588b-427f-40de-b066-c6fa9642bb47": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "thing",
+        "arm",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "grasp",
+        "transport_empty",
+        "rest"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-185d588b-427f-40de-b066-c6fa9642bb47",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "thing": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710",
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "release_load",
+      "tooltip": "Release hold of a gripper or hand.",
+      "sets": {
+        "grasping": false
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": true,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-bab72f84-6cd4-49d2-9886-dc8e06546271": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "thing",
+        "arm",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "grasp",
+        "transport_empty",
+        "rest"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 2,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-bab72f84-6cd4-49d2-9886-dc8e06546271",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "thing": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "release_load",
+      "tooltip": "Release hold of a gripper or hand.",
+      "sets": {
+        "grasping": false
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": true,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-4d81a250-832d-4db0-ac3b-6510fd8fd30e": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "destination",
+        "arm",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "transport_empty",
+        "rest",
+        "grasp"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 3,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-4d81a250-832d-4db0-ac3b-6510fd8fd30e",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "destination": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "destination": "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8",
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "transport_empty",
+      "tooltip": "Transport an empty gripper or hand to a specified location.",
+      "sets": {
+        "agent_destination": "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8"
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": false
+      }
+    },
+    "0.3-therblig-2eba1414-e067-4d29-be77-c98d46814156": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "thing",
+        "arm",
+        "effort",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "release_load",
+        "transport_loaded",
+        "hold"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-2eba1414-e067-4d29-be77-c98d46814156",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "thing": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "effort": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+        "effort": 1,
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "grasp",
+      "tooltip": "Grasp a thing with a specified effort.",
+      "sets": {
+        "grasping": true
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": false,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-9c01686b-fc66-4f7e-9884-feab8b96d6bf": {
+      "cost": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1
+      },
+      "settable": [
+        "agent",
+        "thing",
+        "arm",
+        "effort",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "release_load",
+        "transport_loaded",
+        "hold"
+      ],
+      "duration": {
+        "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 2,
+        "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": null
+      },
+      "showCost": true,
+      "id": "0.3-therblig-9c01686b-fc66-4f7e-9884-feab8b96d6bf",
+      "physical": true,
+      "errors": {
+        "thing_destination_require": null,
+        "thing_destination_set": null,
+        "agent_destination_require": null,
+        "agent_gripping_require": null,
+        "agent": null,
+        "agent_thing_require": null,
+        "thing": null,
+        "cost": null,
+        "duration": null,
+        "agent_gripping_set": null,
+        "general": null,
+        "effort": null,
+        "arm": null,
+        "agent_destination_set": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710",
+        "effort": 1,
+        "arm": null,
+        "agent": "OPTIMIZE_DIRECTIVE"
+      },
+      "type": "grasp",
+      "tooltip": "Grasp a thing with a specified effort.",
+      "sets": {
+        "grasping": true
+      },
+      "showDuration": true,
+      "requires": {
+        "grasping": false,
+        "agent_thing": "MATCH"
+      }
+    }
+  },
+  "agents": {
+    "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": {
+      "bgColor": "rgb(11,130,248)",
+      "name": "Human",
+      "useIcon": true,
+      "color": {
+        "r": 11,
+        "b": 248,
+        "g": 130
+      },
+      "timestamp": 1553019527.036008,
+      "arms": [
+        "human"
+      ],
+      "type": "human",
+      "id": "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99",
+      "elementSetType": "agent",
+      "txtColor": "rgb(255,255,255)"
+    },
+    "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": {
+      "bgColor": "rgb(135,213,201)",
+      "name": "Robot",
+      "useIcon": true,
+      "color": {
+        "r": 135,
+        "b": 201,
+        "g": 213
+      },
+      "timestamp": 1553019540.519857,
+      "arms": [
+        "manipulator"
+      ],
+      "type": "robot",
+      "id": "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4",
+      "elementSetType": "agent",
+      "txtColor": "rgb(0,0,0)"
+    }
+  },
+  "cost_weight": 0.5,
+  "destinations": {
+    "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": {
+      "useIcon": false,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 69,
+        "b": 157,
+        "g": 240
+      },
+      "timestamp": 1553019575.514179,
+      "txtColor": "rgb(0,0,0)",
+      "movable": true,
+      "bgColor": "rgb(69,240,157)",
+      "id": "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8",
+      "locked": false,
+      "name": "d1",
+      "reachable": true,
+      "position": {
+        "y": 0,
+        "x": 0.52748249081792,
+        "z": 0.27577534511529556
+      },
+      "type": "d1"
+    },
+    "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 11,
+        "b": 248,
+        "g": 130
+      },
+      "timestamp": 1553019527.036008,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": true,
+      "bgColor": "rgb(11,130,248)",
+      "id": "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99",
+      "locked": true,
+      "name": "Initial:Human",
+      "reachable": false,
+      "position": {
+        "y": 0.1504488189328361,
+        "x": 0,
+        "z": 0.48940649400076713
+      },
+      "type": "loc-human"
+    },
+    "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": {
+      "useIcon": false,
+      "orientation": {
+        "y": -0.2000238489911795,
+        "x": 3.141592653589793,
+        "z": 3.141592653589793
+      },
+      "color": {
+        "r": 113,
+        "b": 167,
+        "g": 157
+      },
+      "timestamp": 1553019602.537702,
+      "txtColor": "rgb(0,0,0)",
+      "movable": true,
+      "bgColor": "rgb(113,157,167)",
+      "id": "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938",
+      "locked": false,
+      "name": "d2",
+      "reachable": true,
+      "position": {
+        "y": 0,
+        "x": -0.2878347852203944,
+        "z": 0.2678071440505033
+      },
+      "type": "d2"
+    },
+    "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 122,
+        "b": 134,
+        "g": 113
+      },
+      "timestamp": 1553019547.791612,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": true,
+      "bgColor": "rgb(122,113,134)",
+      "id": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+      "locked": true,
+      "name": "Initial:Cube",
+      "reachable": true,
+      "position": {
+        "y": 0.5557297188150934,
+        "x": 0.005616331879141234,
+        "z": 0.20448164852250178
+      },
+      "type": "loc-cube"
+    },
+    "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 135,
+        "b": 201,
+        "g": 213
+      },
+      "timestamp": 1553019540.519857,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "destination",
+      "movable": true,
+      "bgColor": "rgb(135,213,201)",
+      "id": "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4",
+      "locked": true,
+      "name": "Initial:Robot",
+      "reachable": false,
+      "position": {
+        "y": 0.2024397265625653,
+        "x": 0.2597694218630298,
+        "z": 0.34441277975523077
+      },
+      "type": "loc-robot"
+    },
+    "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 67,
+        "b": 137,
+        "g": 243
+      },
+      "timestamp": 1553019556.10398,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "destination",
+      "movable": true,
+      "bgColor": "rgb(67,243,137)",
+      "id": "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710",
+      "locked": true,
+      "name": "Initial:Sphere",
+      "reachable": true,
+      "position": {
+        "y": 0.39340746036706864,
+        "x": -0.368744724015442,
+        "z": 0.22056727873913112
+      },
+      "type": "loc-sphere"
+    }
+  },
+  "name": "New Plan",
+  "tof_table": [
+    {
+      "index": "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99",
+      "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 0,
+      "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 6.018513431,
+      "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 4.594387854,
+      "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 5.346305614,
+      "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1.956580557,
+      "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 6.969773325
+    },
+    {
+      "index": "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4",
+      "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 1.955687568,
+      "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 1.565848086,
+      "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 4.667097151,
+      "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 1.7619870610000001,
+      "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 0,
+      "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 5.575883466
+    },
+    {
+      "index": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+      "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 2.586990501,
+      "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 4.423568952,
+      "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 3.614969758,
+      "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 0,
+      "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 2.063653119,
+      "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 1.769407185
+    },
+    {
+      "index": "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710",
+      "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 4.385236771,
+      "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 5.756777002,
+      "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 4.366106865,
+      "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 1.769389512,
+      "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 4.598188649,
+      "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 0
+    },
+    {
+      "index": "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8",
+      "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 4.096345539,
+      "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 0,
+      "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 4.357278168,
+      "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 6.088762185,
+      "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 1.566054534,
+      "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 6.253014393
+    },
+    {
+      "index": "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938",
+      "0.3-agent-d0d6ba9e-f48c-4aba-a4b0-3c535ef7af99": 4.556188853,
+      "0.3-destination-0a975d46-c5be-4a0d-922b-7b07641f4fd8": 3.639012727,
+      "0.3-destination-5183c1f2-2964-4fee-9a2e-5ecf6cb98938": 0,
+      "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": 3.618567813,
+      "0.3-agent-45ec9920-5bef-4aba-8294-836b840eadb4": 3.578490736,
+      "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": 4.417285284
+    }
+  ],
+  "things": {
+    "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 122,
+        "b": 134,
+        "g": 113
+      },
+      "timestamp": 1553019547.791612,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(122,113,134)",
+      "id": "0.3-thing-e3f020f8-f8fa-41ab-94fe-79ecefb18918",
+      "size": 0.1,
+      "name": "Cube",
+      "position": {
+        "y": 0.5557297188150934,
+        "x": 0.005616331879141234,
+        "z": 0.20448164852250178
+      },
+      "type": "cube"
+    },
+    "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 67,
+        "b": 137,
+        "g": 243
+      },
+      "timestamp": 1553019556.10398,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(67,243,137)",
+      "id": "0.3-thing-2548045e-c322-429a-a2b2-29b3ad961710",
+      "size": 0.1,
+      "name": "Sphere",
+      "position": {
+        "y": 0.39340746036706864,
+        "x": -0.368744724015442,
+        "z": 0.22056727873913112
+      },
+      "type": "sphere"
+    }
+  },
+  "macros": {},
+  "version": "0.3",
+  "time_weight": 0.5,
+  "task_keys": [
+    "0.3-task-493193e9-d8a6-43f3-8e61-2dbeba76c9d8",
+    "0.3-task-f2732fc8-e34a-45a6-95df-7eda147f11bf"
+  ]
+}

@@ -1,0 +1,19 @@
+/* .task-content {
+  padding: 10px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+} */
+
+.button {
+  width: 348px;
+  height: 50px;
+  margin: 12px;
+  padding: 8px;
+}
+
+.container {
+  overflow-x: scroll;
+  padding: 8px;
+}

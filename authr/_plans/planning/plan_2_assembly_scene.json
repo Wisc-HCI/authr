@@ -1,0 +1,430 @@
+{
+  "tasks": {},
+  "tofs": {},
+  "therbligs": {},
+  "agents": {
+    "0.3-agent-c3ca83fb-58e7-4c14-a677-6d078a3b9e09": {
+      "bgColor": "rgb(70,237,190)",
+      "name": "Human",
+      "useIcon": true,
+      "color": {
+        "r": 70,
+        "b": 190,
+        "g": 237
+      },
+      "timestamp": 1567538197.218072,
+      "arms": ["human"],
+      "type": "human",
+      "id": "0.3-agent-c3ca83fb-58e7-4c14-a677-6d078a3b9e09",
+      "elementSetType": "agent",
+      "txtColor": "rgb(0,0,0)"
+    },
+    "0.3-agent-27180d4b-02f0-44b5-829a-e6045e1632a8": {
+      "bgColor": "rgb(107,130,181)",
+      "name": "Robot",
+      "useIcon": true,
+      "color": {
+        "r": 107,
+        "b": 181,
+        "g": 130
+      },
+      "timestamp": 1567538197.250312,
+      "arms": ["manipulator"],
+      "type": "robot",
+      "id": "0.3-agent-27180d4b-02f0-44b5-829a-e6045e1632a8",
+      "elementSetType": "agent",
+      "txtColor": "rgb(255,255,255)"
+    }
+  },
+  "cost_weight": 0.95,
+  "destinations": {
+    "0.3-thing-b0220036-02ea-4f7a-ab95-314cdbd9d27f": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 230,
+        "b": 146,
+        "g": 129
+      },
+      "timestamp": 1567538197.27974,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(230,129,146)",
+      "id": "0.3-thing-b0220036-02ea-4f7a-ab95-314cdbd9d27f",
+      "locked": true,
+      "name": "Initial:Cable1",
+      "reachable": true,
+      "position": {
+        "y": 0.2,
+        "x": 0.05,
+        "z": 0
+      },
+      "type": "loc-cube"
+    },
+    "0.3-agent-27180d4b-02f0-44b5-829a-e6045e1632a8": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": -1.57,
+        "z": 0
+      },
+      "color": {
+        "r": 107,
+        "b": 181,
+        "g": 130
+      },
+      "timestamp": 1567538197.250312,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(107,130,181)",
+      "id": "0.3-agent-27180d4b-02f0-44b5-829a-e6045e1632a8",
+      "locked": true,
+      "name": "Initial:Robot",
+      "reachable": true,
+      "position": {
+        "y": 0,
+        "x": 0,
+        "z": 0.45
+      },
+      "type": "loc-robot"
+    },
+    "0.3-thing-cbf628b3-32c9-4e0d-916c-5bff3ac00b3c": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 127,
+        "b": 153,
+        "g": 146
+      },
+      "timestamp": 1567538197.324418,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(127,146,153)",
+      "id": "0.3-thing-cbf628b3-32c9-4e0d-916c-5bff3ac00b3c",
+      "locked": true,
+      "name": "Initial:Nut2",
+      "reachable": true,
+      "position": {
+        "y": 0.29,
+        "x": -0.1,
+        "z": 0
+      },
+      "type": "loc-cylinder"
+    },
+    "0.3-thing-d24e74ef-d343-4419-8426-dc8a16fdc901": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 126,
+        "b": 155,
+        "g": 153
+      },
+      "timestamp": 1567538197.338161,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(126,153,155)",
+      "id": "0.3-thing-d24e74ef-d343-4419-8426-dc8a16fdc901",
+      "locked": true,
+      "name": "Initial:Nut3",
+      "reachable": true,
+      "position": {
+        "y": 0.31,
+        "x": -0.1,
+        "z": 0
+      },
+      "type": "loc-cylinder"
+    },
+    "0.3-thing-25b37bf1-6904-45a6-8396-30f8291b59af": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 114,
+        "b": 144,
+        "g": 139
+      },
+      "timestamp": 1567538197.357387,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(114,139,144)",
+      "id": "0.3-thing-25b37bf1-6904-45a6-8396-30f8291b59af",
+      "locked": true,
+      "name": "Initial:Nut4",
+      "reachable": true,
+      "position": {
+        "y": 0.33,
+        "x": -0.1,
+        "z": 0
+      },
+      "type": "loc-cylinder"
+    },
+    "0.3-thing-bade4dfc-6db4-4fb8-857f-a79541128e20": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 126,
+        "b": 155,
+        "g": 153
+      },
+      "timestamp": 1567538197.30757,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(126,153,155)",
+      "id": "0.3-thing-bade4dfc-6db4-4fb8-857f-a79541128e20",
+      "locked": true,
+      "name": "Initial:Nut1",
+      "reachable": true,
+      "position": {
+        "y": 0.27,
+        "x": -0.1,
+        "z": 0
+      },
+      "type": "loc-cylinder"
+    },
+    "0.3-agent-c3ca83fb-58e7-4c14-a677-6d078a3b9e09": {
+      "useIcon": true,
+      "orientation": {
+        "y": 1.57,
+        "x": -1.57,
+        "z": 0
+      },
+      "color": {
+        "r": 70,
+        "b": 190,
+        "g": 237
+      },
+      "timestamp": 1567538197.218072,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(70,237,190)",
+      "id": "0.3-agent-c3ca83fb-58e7-4c14-a677-6d078a3b9e09",
+      "locked": true,
+      "name": "Initial:Human",
+      "reachable": true,
+      "position": {
+        "y": 0,
+        "x": -0.35,
+        "z": 0.15
+      },
+      "type": "loc-human"
+    },
+    "0.3-thing-a506b5ea-87cf-4b62-a777-d4bd9707f9b3": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 226,
+        "b": 148,
+        "g": 133
+      },
+      "timestamp": 1567538197.293137,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(226,133,148)",
+      "id": "0.3-thing-a506b5ea-87cf-4b62-a777-d4bd9707f9b3",
+      "locked": true,
+      "name": "Initial:Cable2",
+      "reachable": true,
+      "position": {
+        "y": 0.2,
+        "x": -0.05,
+        "z": 0
+      },
+      "type": "loc-cube"
+    }
+  },
+  "name": "New Plan",
+  "tof_table": [],
+  "things": {
+    "0.3-thing-d24e74ef-d343-4419-8426-dc8a16fdc901": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 126,
+        "b": 155,
+        "g": 153
+      },
+      "timestamp": 1567538197.338161,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(126,153,155)",
+      "id": "0.3-thing-d24e74ef-d343-4419-8426-dc8a16fdc901",
+      "size": 0.0094,
+      "name": "Nut3",
+      "position": {
+        "y": 0.31,
+        "x": -0.1,
+        "z": 0
+      },
+      "type": "cylinder"
+    },
+    "0.3-thing-b0220036-02ea-4f7a-ab95-314cdbd9d27f": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 230,
+        "b": 146,
+        "g": 129
+      },
+      "timestamp": 1567538197.27974,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(230,129,146)",
+      "id": "0.3-thing-b0220036-02ea-4f7a-ab95-314cdbd9d27f",
+      "size": 0.01,
+      "name": "Cable1",
+      "position": {
+        "y": 0.2,
+        "x": 0.05,
+        "z": 0
+      },
+      "type": "cube"
+    },
+    "0.3-thing-25b37bf1-6904-45a6-8396-30f8291b59af": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 114,
+        "b": 144,
+        "g": 139
+      },
+      "timestamp": 1567538197.357387,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(114,139,144)",
+      "id": "0.3-thing-25b37bf1-6904-45a6-8396-30f8291b59af",
+      "size": 0.0094,
+      "name": "Nut4",
+      "position": {
+        "y": 0.33,
+        "x": -0.1,
+        "z": 0
+      },
+      "type": "cylinder"
+    },
+    "0.3-thing-bade4dfc-6db4-4fb8-857f-a79541128e20": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 126,
+        "b": 155,
+        "g": 153
+      },
+      "timestamp": 1567538197.30757,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(126,153,155)",
+      "id": "0.3-thing-bade4dfc-6db4-4fb8-857f-a79541128e20",
+      "size": 0.0094,
+      "name": "Nut1",
+      "position": {
+        "y": 0.27,
+        "x": -0.1,
+        "z": 0
+      },
+      "type": "cylinder"
+    },
+    "0.3-thing-cbf628b3-32c9-4e0d-916c-5bff3ac00b3c": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 127,
+        "b": 153,
+        "g": 146
+      },
+      "timestamp": 1567538197.324418,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(127,146,153)",
+      "id": "0.3-thing-cbf628b3-32c9-4e0d-916c-5bff3ac00b3c",
+      "size": 0.0094,
+      "name": "Nut2",
+      "position": {
+        "y": 0.29,
+        "x": -0.1,
+        "z": 0
+      },
+      "type": "cylinder"
+    },
+    "0.3-thing-a506b5ea-87cf-4b62-a777-d4bd9707f9b3": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 226,
+        "b": 148,
+        "g": 133
+      },
+      "timestamp": 1567538197.293137,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(226,133,148)",
+      "id": "0.3-thing-a506b5ea-87cf-4b62-a777-d4bd9707f9b3",
+      "size": 0.01,
+      "name": "Cable2",
+      "position": {
+        "y": 0.2,
+        "x": -0.05,
+        "z": 0
+      },
+      "type": "cube"
+    }
+  },
+  "macros": {},
+  "version": "0.3",
+  "time_weight": 0.05,
+  "task_keys": []
+}

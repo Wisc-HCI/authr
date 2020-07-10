@@ -1,0 +1,49 @@
+<div fxFill fxLayout="column" (click)="$event.stopPropagation()">
+    <ng-container *ngIf='therblig'>
+        <mat-toolbar color='primary'>
+            <span>{{therblig.type | replaceUnderscores | titlecase}} Detail</span>
+        </mat-toolbar>
+        <!-- Thing, Destination, and Agent -->
+        <div fxLayoutAlign="space-around center" class="element mat-elevation-z2">
+            <!-- Agent Selector -->
+            <div *ngIf='therblig.parameters.agent !== undefined' fxLayout="column" fxLayoutAlign="space-around center" >
+                <element-icon [type]='"Agent"'
+                              [element]='authrService.getAgentById(therblig.parameters.agent)'>
+                </element-icon>
+                <span class='label'>
+                    Agent
+                </span>
+            </div>
+
+            <!-- Thing Selector -->
+            <div *ngIf='therblig.parameters.thing !== undefined' fxLayout="column" fxLayoutAlign="space-around center" >
+                <element-icon [type]='"Thing"'
+                              [element]='authrService.getThingById(therblig.parameters.thing)'>
+                </element-icon>
+                <span class='label'>
+                    Thing
+                </span>
+            </div>
+
+            <!-- Destination Selector -->
+            <div *ngIf='therblig.parameters.destination !== undefined' fxLayout="column" fxLayoutAlign="space-around center" >
+                <element-icon [type]='"Destination"'
+                              [element]='authrService.getDestinationById(therblig.parameters.destination)'>
+                </element-icon>
+                <span class='label'>
+                    Destination
+                </span>
+            </div>
+        </div>
+
+        <div fxFill fxFlex>
+            <table fxFlex class="element mat-elevation-z2">
+              <tr *ngIf="therblig.duration"><th>Duration</th><td>{{therblig.duration}} s</td></tr>
+              <tr *ngIf="therblig.cost"><th>Cost</th><td>{{therblig.cost}}</td></tr>
+              <tr *ngIf="therblig.parameters.effort"><th>Effort</th><td>{{therblig.parameters.effort}}</td></tr>
+              <tr *ngIf="therblig.parameters.arm"><th>Arm</th><td>{{therblig.parameters.arm}}</td></tr>
+            </table>
+        </div>
+    <!-- <div fxFlex='grow'></div> -->
+    </ng-container>
+</div>

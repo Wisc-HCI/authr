@@ -1,0 +1,12 @@
+.element {
+    padding: 16px;
+    margin: 5px
+}
+
+.rowspan {
+  padding: 30px
+}
+
+.vector-component {
+    max-width: 50px
+}

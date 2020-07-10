@@ -1,0 +1,13 @@
+.macro {
+    font-family: 'Roboto', sans-serif;
+    size: 12px;
+    border-radius: 10px;
+    background-color: grey;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #ce91f2;
+    text: white
+}

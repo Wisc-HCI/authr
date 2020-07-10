@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libdaex-yahsp-mt.a  CMakeFiles/daex-yahsp-mt.dir/utils/posix_timer.cpp.o CMakeFiles/daex-yahsp-mt.dir/utils/pddl_load.cpp.o CMakeFiles/daex-yahsp-mt.dir/utils/cli.cpp.o CMakeFiles/daex-yahsp-mt.dir/core/goal.cpp.o CMakeFiles/daex-yahsp-mt.dir/utils/eoJsonUtils.cpp.o
+/usr/bin/ranlib ../../lib/libdaex-yahsp-mt.a

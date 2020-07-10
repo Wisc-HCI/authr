@@ -1,0 +1,19 @@
+<mat-toolbar color='primary'>
+    <span>Macro Detail</span>
+</mat-toolbar>
+<div *ngIf="macro" class="macro-detail">
+    <mat-form-field class="action">
+        <mat-label>Name</mat-label>
+        <input matInput
+               placeholder="Name"
+               [(ngModel)]="name"/>
+    </mat-form-field>
+    <!-- List the therbligs it contains -->
+    <div class="therblig-container">
+        <therblig-item *ngFor="let therbligKey of therbligs"
+                       [preview]='true'
+                       [therbligKey]="therbligKey">
+        </therblig-item>
+    </div>
+    <button class="action" mat-raised-button color="warn" (click)="deleteMacro(macroKey)"> Delete </button>
+</div>

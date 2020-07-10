@@ -1,0 +1,36 @@
+<div class='content-flex black' fxLayoutAlign='center center'>
+  <mat-card class="login-card" fxLayout='column'>
+    <mat-card-header fxLayoutAlign="space-around center">
+      <div mat-card-avatar><mat-icon class='title-icon' svgIcon='logo'></mat-icon></div>
+      <mat-card-title>Connect to Server</mat-card-title>
+    </mat-card-header>
+    <mat-card-content *ngIf='!loading; else loadingview' fxFlex fxLayoutAlign="space-around center" fxLayout='column'>
+      <!-- <mat-form-field appearance="outline">
+          <span matPrefix>http://</span>
+          <input matInput placeholder="Address" [(ngModel)]="authrService.address" (keydown.enter)="connect()" />
+          <mat-hint>e.g. http://address.location.edu:9090</mat-hint>
+      </mat-form-field> -->
+      <mat-form-field appearance="outline" color="accent">
+          <mat-label>Address</mat-label>
+          <input matInput placeholder="Address" [(ngModel)]="authrService.address" (keydown.enter)="connect()" />
+          <span class="primary-text" fxLayout="center" *ngIf="!authrService.secure" matPrefix>http://</span>
+          <span class="primary-text" fxLayout="center" *ngIf="authrService.secure" matPrefix>https://</span>
+          <mat-hint *ngIf="!authrService.secure">e.g. http://address.location.edu:9090</mat-hint>
+          <mat-hint *ngIf="authrService.secure">e.g. https://address.location.edu:9090</mat-hint>
+      </mat-form-field>
+      <mat-slide-toggle
+          [color]="'accent'"
+          [checked]='authrService.secure'
+          [(ngModel)]="authrService.secure">
+          Secure
+      </mat-slide-toggle>
+      <button mat-raised-button (click)="connect()" color="accent" class="button">Connect</button>
+  </mat-card-content>
+  <ng-template #loadingview>
+      <mat-card-content fxFlex fxLayoutAlign="space-around center" fxLayout='column'>
+          <mat-spinner></mat-spinner>
+      </mat-card-content>
+  </ng-template>
+</mat-card>
+
+</div>

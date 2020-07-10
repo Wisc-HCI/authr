@@ -1,0 +1,203 @@
+{
+  "tasks": {
+    "0.3-task-5edbabc1-6d09-408d-af5b-c1d576a8474e": {
+      "timestamp": 1548959487.907799,
+      "therbligs": [
+        "0.3-therblig-89c37994-9ad9-4935-bb28-c72712e4e0ff",
+        "0.3-therblig-59211b07-4b1b-4d7a-b800-5adf34e3c331"
+      ],
+      "name": "My First Task",
+      "repeat": 0
+    }
+  },
+  "tofs": {
+    "0.3-thing-5f368ebd-c2f2-4855-967d-56a62a3cd264_0.3-thing-5f368ebd-c2f2-4855-967d-56a62a3cd264": 0
+  },
+  "therbligs": {
+    "0.3-therblig-59211b07-4b1b-4d7a-b800-5adf34e3c331": {
+      "cost": {
+        "0.3-agent-584d350f-1a5c-4e03-91a9-17f52169e1ac": null
+      },
+      "settable": [
+        "agent",
+        "thing",
+        "destination",
+        "arm",
+        "effort",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "transport_loaded",
+        "hold",
+        "release_load"
+      ],
+      "duration": {
+        "0.3-agent-584d350f-1a5c-4e03-91a9-17f52169e1ac": null
+      },
+      "showCost": false,
+      "physical": true,
+      "errors": {
+        "thing": "Value not set.",
+        "cost": null,
+        "duration": null,
+        "destination": "Value not set.",
+        "effort": "Value not set.",
+        "arm": null,
+        "agent": null,
+        "general": "3"
+      },
+      "cognitive": false,
+      "parameters": {
+        "thing": null,
+        "destination": null,
+        "effort": null,
+        "arm": "Not Applicable",
+        "agent": "0.3-agent-584d350f-1a5c-4e03-91a9-17f52169e1ac"
+      },
+      "type": "transport_loaded",
+      "tooltip": "Transport a loaded gripper or hand to a specified location.",
+      "sets": {
+        "thing_destination": null,
+        "agent_destination": null
+      },
+      "showDuration": false,
+      "requires": {
+        "grasping": true,
+        "agent_thing": "MATCH"
+      }
+    },
+    "0.3-therblig-89c37994-9ad9-4935-bb28-c72712e4e0ff": {
+      "cost": {
+        "0.3-agent-584d350f-1a5c-4e03-91a9-17f52169e1ac": null
+      },
+      "settable": [
+        "agent",
+        "destination",
+        "arm",
+        "parameters",
+        "duration",
+        "cost"
+      ],
+      "allowed": [
+        "transport_empty",
+        "rest",
+        "grasp"
+      ],
+      "duration": {
+        "0.3-agent-584d350f-1a5c-4e03-91a9-17f52169e1ac": null
+      },
+      "showCost": false,
+      "physical": true,
+      "errors": {
+        "destination": "Value not set.",
+        "agent": null,
+        "general": "1",
+        "cost": null,
+        "duration": null,
+        "arm": null
+      },
+      "cognitive": false,
+      "parameters": {
+        "destination": null,
+        "arm": "Not Applicable",
+        "agent": "0.3-agent-584d350f-1a5c-4e03-91a9-17f52169e1ac"
+      },
+      "type": "transport_empty",
+      "tooltip": "Transport an empty gripper or hand to a specified location.",
+      "sets": {
+        "agent_destination": null
+      },
+      "showDuration": false,
+      "requires": {
+        "grasping": false
+      }
+    }
+  },
+  "agents": {
+    "0.3-agent-584d350f-1a5c-4e03-91a9-17f52169e1ac": {
+      "bgColor": "rgb(138,181,110)",
+      "displayType": "Human",
+      "displayName": "Unnamed Agent",
+      "name": "Unnamed Agent",
+      "useIcon": true,
+      "color": {
+        "r": 138,
+        "b": 110,
+        "g": 181
+      },
+      "timestamp": 1548959549.218646,
+      "type": "human",
+      "txtColor": "rgb(0,0,0)",
+      "arms": [
+        "Not Applicable"
+      ]
+    }
+  },
+  "cost_weight": 0.5,
+  "destinations": {
+    "0.3-thing-5f368ebd-c2f2-4855-967d-56a62a3cd264": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 83,
+        "b": 103,
+        "g": 243
+      },
+      "timestamp": 1548959592.035217,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "destination",
+      "bgColor": "rgb(83,243,103)",
+      "locked": true,
+      "displayName": "Initial:Unnamed Thing",
+      "name": "Initial:Unnamed Thing",
+      "displayType": "Unconfigured Thing",
+      "position": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "type": "loc-cube"
+    }
+  },
+  "name": "New Plan",
+  "things": {
+    "0.3-thing-5f368ebd-c2f2-4855-967d-56a62a3cd264": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "color": {
+        "r": 83,
+        "b": 103,
+        "g": 243
+      },
+      "timestamp": 1548959592.035217,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(83,243,103)",
+      "size": 1,
+      "displayName": "Unnamed Thing",
+      "name": "Unnamed Thing",
+      "displayType": "Unconfigured Thing",
+      "position": {
+        "y": 0,
+        "x": 0,
+        "z": 0
+      },
+      "type": "cube"
+    }
+  },
+  "version": "0.3",
+  "time_weight": 0.5,
+  "task_keys": [
+    "0.3-task-5edbabc1-6d09-408d-af5b-c1d576a8474e"
+  ]
+}

@@ -1,0 +1,55 @@
+@import "../../styles.scss";
+
+.setup-container {
+    overflow-y: scroll;
+    padding: 30px;
+    background-color: #fafafa;
+}
+
+.vector-input {
+    max-width: 40px;
+}
+
+.color-input {
+    max-width: 40px;
+}
+
+mat-expansion-panel-header {
+    display: flex;
+}
+
+mat-panel-title {
+    flex: 1;
+}
+
+mat-panel-description {
+    flex: 1;
+}
+
+button {
+    margin-left: 40px;
+}
+
+table {
+  width: 100%;
+}
+
+.right-buffer {
+    margin-right: 10px;
+}
+
+.element {
+    padding: 16px;
+    margin: 5px
+}
+
+.form-container {
+    padding: 16px
+}
+
+.weight {
+    border-radius: 3px;
+    padding: 4px;
+    margin: 6px;
+    background-color: $accent;
+}

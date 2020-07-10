@@ -1,0 +1,61 @@
+@import "../../styles.scss";
+
+.therblig {
+    font-family: 'Roboto', sans-serif;
+    max-width: 320px;
+    size: 12px;
+    border-radius: 10px;
+    background-color: grey;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.therblig-preview {
+    font-family: 'Roboto', sans-serif;
+    max-width: 320px;
+    font-size: 10px;
+    border-radius: 10px;
+    background-color: grey;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.transport_empty, .grasp, .transport_loaded, .release_load, .hold, .position, .rest, .preposition {
+  background-color: #82c3b8;
+  text: white;
+}
+
+.search, .find, .select, .inspect, .plan {
+    background-color: #a0db9b
+}
+
+.assemble, .disassemble, .use {
+    background-color: #b1e0ee
+}
+
+.error {
+  font-family: 'Roboto', sans-serif;
+  background-color: $warn;
+  color:white;
+  background-size: contain;
+  border-radius: 500px;
+  height: 20px;
+  width: 20px;
+}
+
+.text-error {
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.therblig-icon {
+  width: 20px;
+  height: 20px;
+}

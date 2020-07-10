@@ -1,0 +1,14 @@
+<package>
+    <name>custom_meshes</name>
+    <version>0.0.1</version>
+    <description>Provides meshes for RVIZ</description>
+
+    <maintainer email="todo@todo.com"></maintainer>
+    <license>TODO</license>
+    <author>TODO</author>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+	<export>
+	</export>
+</package>

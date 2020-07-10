@@ -1,0 +1,63 @@
+@import "../../styles.scss";
+
+.setup-container {
+    overflow-y: scroll;
+    padding: 30px;
+    background-color: #fafafa;
+}
+
+.vector-input {
+    max-width: 40px;
+}
+
+.color-input {
+    max-width: 40px;
+}
+
+.divider-buffer {
+    margin-top: 30px;
+}
+
+mat-expansion-panel-header {
+    display: flex;
+}
+
+mat-panel-title {
+    flex: 1;
+}
+
+mat-panel-description {
+    flex: 1;
+}
+
+table {
+  width: 75%; /* 99 */
+}
+
+.right-buffer {
+    margin-right: 10px;
+}
+
+.element {
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 50px;
+}
+
+.form-container {
+    padding: 16px
+}
+
+.weight {
+    border-radius: 3px;
+    padding: 4px;
+    margin: 6px;
+    background-color: $accent;
+}
+
+.info {
+    padding: 16px;
+    margin: 5px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}

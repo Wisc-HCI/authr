@@ -1,0 +1,754 @@
+{
+  "tasks": {},
+  "tofs": {},
+  "therbligs": {},
+  "agents": {
+    "0.3-agent-bb69c6cb-4a96-47e9-9650-be59cd5d97ce": {
+      "bgColor": "rgb(154,211,114)",
+      "name": "Robot",
+      "useIcon": true,
+      "color": {
+        "r": 154,
+        "b": 114,
+        "g": 211
+      },
+      "timestamp": 1593277576.676277,
+      "arms": ["manipulator"],
+      "type": "robot",
+      "id": "0.3-agent-bb69c6cb-4a96-47e9-9650-be59cd5d97ce",
+      "elementSetType": "agent",
+      "txtColor": "rgb(0,0,0)"
+    },
+    "0.3-agent-66a30f87-c5b8-4777-9690-776439bd7f26": {
+      "bgColor": "rgb(59,116,193)",
+      "name": "Human",
+      "useIcon": true,
+      "color": {
+        "r": 59,
+        "b": 193,
+        "g": 116
+      },
+      "timestamp": 1593277576.667941,
+      "arms": ["human"],
+      "type": "human",
+      "id": "0.3-agent-66a30f87-c5b8-4777-9690-776439bd7f26",
+      "elementSetType": "agent",
+      "txtColor": "rgb(255,255,255)"
+    }
+  },
+  "cost_weight": 0.4,
+  "destinations": {
+    "0.3-thing-af10da1f-c8a2-4282-b33f-5be927c2e549": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 0,
+        "b": 202,
+        "g": 160
+      },
+      "timestamp": 1593277576.72928,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(0,160,202)",
+      "id": "0.3-thing-af10da1f-c8a2-4282-b33f-5be927c2e549",
+      "locked": true,
+      "name": "Initial:Box2",
+      "reachable": true,
+      "position": {
+        "y": 0.55,
+        "x": -0.3,
+        "z": 0.065
+      },
+      "type": "loc-container"
+    },
+    "0.3-thing-8994af3e-13ec-44cf-b675-b1926ae43d05": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 156,
+        "b": 156,
+        "g": 156
+      },
+      "timestamp": 1593277576.710365,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(156,156,156)",
+      "id": "0.3-thing-8994af3e-13ec-44cf-b675-b1926ae43d05",
+      "locked": true,
+      "name": "Initial:Battery4",
+      "reachable": true,
+      "position": {
+        "y": 0.6,
+        "x": -0.55555,
+        "z": 0.015
+      },
+      "type": "loc-cube"
+    },
+    "0.3-thing-7bf1d97e-607f-4d7f-9fbd-ac2d95f718a8": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 105,
+        "b": 105,
+        "g": 105
+      },
+      "timestamp": 1593277576.688961,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(105,105,105)",
+      "id": "0.3-thing-7bf1d97e-607f-4d7f-9fbd-ac2d95f718a8",
+      "locked": true,
+      "name": "Initial:Battery1",
+      "reachable": true,
+      "position": {
+        "y": 0.35,
+        "x": -0.3,
+        "z": 0.015
+      },
+      "type": "loc-cube"
+    },
+    "0.3-agent-66a30f87-c5b8-4777-9690-776439bd7f26": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0.002909453587011033,
+        "x": 3.1336605814529004,
+        "z": 1.9223480248337523
+      },
+      "color": {
+        "r": 59,
+        "b": 193,
+        "g": 116
+      },
+      "timestamp": 1593277576.667941,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(59,116,193)",
+      "id": "0.3-agent-66a30f87-c5b8-4777-9690-776439bd7f26",
+      "locked": true,
+      "name": "Initial:Human",
+      "reachable": true,
+      "position": {
+        "y": 0.39227378452527517,
+        "x": -0.3743450883749061,
+        "z": 0.40114836769649337
+      },
+      "type": "loc-human"
+    },
+    "0.3-thing-029c036a-3a17-4723-bb30-775ef7fb4e0b": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 113,
+        "b": 113,
+        "g": 113
+      },
+      "timestamp": 1593277576.701015,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(113,113,113)",
+      "id": "0.3-thing-029c036a-3a17-4723-bb30-775ef7fb4e0b",
+      "locked": true,
+      "name": "Initial:Battery3",
+      "reachable": true,
+      "position": {
+        "y": 0.6,
+        "x": -0.3,
+        "z": 0.015
+      },
+      "type": "loc-cube"
+    },
+    "0.3-thing-4c01555d-755e-493c-ad0f-3614bf6c6de4": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 194,
+        "b": 182,
+        "g": 34
+      },
+      "timestamp": 1593277576.910155,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(194,34,182)",
+      "id": "0.3-thing-4c01555d-755e-493c-ad0f-3614bf6c6de4",
+      "locked": true,
+      "name": "Initial:Toy3",
+      "reachable": true,
+      "position": {
+        "y": 0.275,
+        "x": -0.55,
+        "z": 0.05
+      },
+      "type": "loc-cylinder"
+    },
+    "0.3-thing-4d002108-9699-49da-a5f2-57720e4d431a": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 183,
+        "b": 185,
+        "g": 20
+      },
+      "timestamp": 1593277576.89132,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(183,20,185)",
+      "id": "0.3-thing-4d002108-9699-49da-a5f2-57720e4d431a",
+      "locked": true,
+      "name": "Initial:Toy2",
+      "reachable": true,
+      "position": {
+        "y": 0.525,
+        "x": -0.3,
+        "z": 0.05
+      },
+      "type": "loc-cylinder"
+    },
+    "0.3-thing-ee20cbce-84cc-4445-94b8-e541bb5ae5c5": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 209,
+        "b": 211,
+        "g": 47
+      },
+      "timestamp": 1593277576.859449,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(209,47,211)",
+      "id": "0.3-thing-ee20cbce-84cc-4445-94b8-e541bb5ae5c5",
+      "locked": true,
+      "name": "Initial:Toy1",
+      "reachable": true,
+      "position": {
+        "y": 0.275,
+        "x": -0.3,
+        "z": 0.05
+      },
+      "type": "loc-cylinder"
+    },
+    "0.3-thing-d879237d-900f-4740-9786-ed27e38dca06": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 125,
+        "b": 125,
+        "g": 125
+      },
+      "timestamp": 1593277576.695243,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(125,125,125)",
+      "id": "0.3-thing-d879237d-900f-4740-9786-ed27e38dca06",
+      "locked": true,
+      "name": "Initial:Battery2",
+      "reachable": true,
+      "position": {
+        "y": 0.35,
+        "x": -0.55,
+        "z": 0.015
+      },
+      "type": "loc-cube"
+    },
+    "0.3-thing-02c8aa84-5343-48a1-beb1-d6a0d0f2b459": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 0,
+        "b": 188,
+        "g": 156
+      },
+      "timestamp": 1593277576.718112,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(0,156,188)",
+      "id": "0.3-thing-02c8aa84-5343-48a1-beb1-d6a0d0f2b459",
+      "locked": true,
+      "name": "Initial:Box1",
+      "reachable": true,
+      "position": {
+        "y": 0.3,
+        "x": -0.3,
+        "z": 0.065
+      },
+      "type": "loc-container"
+    },
+    "0.3-agent-bb69c6cb-4a96-47e9-9650-be59cd5d97ce": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": -1.5581729195461855,
+        "z": 0
+      },
+      "color": {
+        "r": 154,
+        "b": 114,
+        "g": 211
+      },
+      "timestamp": 1593277576.676277,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(154,211,114)",
+      "id": "0.3-agent-bb69c6cb-4a96-47e9-9650-be59cd5d97ce",
+      "locked": true,
+      "name": "Initial:Robot",
+      "reachable": true,
+      "position": {
+        "y": 0.5766528578099704,
+        "x": 0,
+        "z": 0.7737738065491808
+      },
+      "type": "loc-robot"
+    },
+    "0.3-thing-6b88713a-a8d6-407c-a4f1-f2575b78ef57": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 0,
+        "b": 196,
+        "g": 168
+      },
+      "timestamp": 1593277576.766146,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(0,168,196)",
+      "id": "0.3-thing-6b88713a-a8d6-407c-a4f1-f2575b78ef57",
+      "locked": true,
+      "name": "Initial:Box3",
+      "reachable": true,
+      "position": {
+        "y": 0.3,
+        "x": -0.55,
+        "z": 0.065
+      },
+      "type": "loc-container"
+    },
+    "0.3-thing-16bf178c-75bf-4a28-9ee2-710a88cfcb94": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 0,
+        "b": 209,
+        "g": 157
+      },
+      "timestamp": 1593277576.809594,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(0,157,209)",
+      "id": "0.3-thing-16bf178c-75bf-4a28-9ee2-710a88cfcb94",
+      "locked": true,
+      "name": "Initial:Box4",
+      "reachable": true,
+      "position": {
+        "y": 0.55,
+        "x": -0.55,
+        "z": 0.065
+      },
+      "type": "loc-container"
+    },
+    "0.3-thing-4c3ccadc-a0f0-4b8e-a733-9f003dbf4e22": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 201,
+        "b": 153,
+        "g": 30
+      },
+      "timestamp": 1593277576.928734,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "destination",
+      "movable": false,
+      "bgColor": "rgb(201,30,153)",
+      "id": "0.3-thing-4c3ccadc-a0f0-4b8e-a733-9f003dbf4e22",
+      "locked": true,
+      "name": "Initial:Toy4",
+      "reachable": true,
+      "position": {
+        "y": 0.525,
+        "x": -0.55,
+        "z": 0.05
+      },
+      "type": "loc-cylinder"
+    }
+  },
+  "name": "Kitting (Test 1)",
+  "tof_table": [],
+  "things": {
+    "0.3-thing-ee20cbce-84cc-4445-94b8-e541bb5ae5c5": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 209,
+        "b": 211,
+        "g": 47
+      },
+      "timestamp": 1593277576.859449,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(209,47,211)",
+      "id": "0.3-thing-ee20cbce-84cc-4445-94b8-e541bb5ae5c5",
+      "size": 0.1,
+      "name": "Toy1",
+      "position": {
+        "y": 0.35,
+        "x": 0.65,
+        "z": 0.05
+      },
+      "type": "cylinder"
+    },
+    "0.3-thing-02c8aa84-5343-48a1-beb1-d6a0d0f2b459": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 0,
+        "b": 188,
+        "g": 156
+      },
+      "timestamp": 1593277576.718112,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(0,156,188)",
+      "id": "0.3-thing-02c8aa84-5343-48a1-beb1-d6a0d0f2b459",
+      "size": 0.2,
+      "name": "Box1",
+      "position": {
+        "y": 0.3,
+        "x": -0.3,
+        "z": 0.065
+      },
+      "type": "container"
+    },
+    "0.3-thing-af10da1f-c8a2-4282-b33f-5be927c2e549": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 0,
+        "b": 202,
+        "g": 160
+      },
+      "timestamp": 1593277576.72928,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(0,160,202)",
+      "id": "0.3-thing-af10da1f-c8a2-4282-b33f-5be927c2e549",
+      "size": 0.2,
+      "name": "Box2",
+      "position": {
+        "y": 0.55,
+        "x": -0.3,
+        "z": 0.065
+      },
+      "type": "container"
+    },
+    "0.3-thing-4d002108-9699-49da-a5f2-57720e4d431a": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 183,
+        "b": 185,
+        "g": 20
+      },
+      "timestamp": 1593277576.89132,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(183,20,185)",
+      "id": "0.3-thing-4d002108-9699-49da-a5f2-57720e4d431a",
+      "size": 0.1,
+      "name": "Toy2",
+      "position": {
+        "y": 0.35,
+        "x": 0.55,
+        "z": 0.05
+      },
+      "type": "cylinder"
+    },
+    "0.3-thing-8994af3e-13ec-44cf-b675-b1926ae43d05": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 156,
+        "b": 156,
+        "g": 156
+      },
+      "timestamp": 1593277576.710365,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(156,156,156)",
+      "id": "0.3-thing-8994af3e-13ec-44cf-b675-b1926ae43d05",
+      "size": 0.05,
+      "name": "Battery4",
+      "position": {
+        "y": 0.525,
+        "x": 0.325,
+        "z": 0.015
+      },
+      "type": "cube"
+    },
+    "0.3-thing-7bf1d97e-607f-4d7f-9fbd-ac2d95f718a8": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 105,
+        "b": 105,
+        "g": 105
+      },
+      "timestamp": 1593277576.688961,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(105,105,105)",
+      "id": "0.3-thing-7bf1d97e-607f-4d7f-9fbd-ac2d95f718a8",
+      "size": 0.05,
+      "name": "Battery1",
+      "position": {
+        "y": 0.525,
+        "x": 0.475,
+        "z": 0.015
+      },
+      "type": "cube"
+    },
+    "0.3-thing-029c036a-3a17-4723-bb30-775ef7fb4e0b": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 113,
+        "b": 113,
+        "g": 113
+      },
+      "timestamp": 1593277576.701015,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(113,113,113)",
+      "id": "0.3-thing-029c036a-3a17-4723-bb30-775ef7fb4e0b",
+      "size": 0.05,
+      "name": "Battery3",
+      "position": {
+        "y": 0.525,
+        "x": 0.375,
+        "z": 0.015
+      },
+      "type": "cube"
+    },
+    "0.3-thing-6b88713a-a8d6-407c-a4f1-f2575b78ef57": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 0,
+        "b": 196,
+        "g": 168
+      },
+      "timestamp": 1593277576.766146,
+      "txtColor": "rgb(0,0,0)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(0,168,196)",
+      "id": "0.3-thing-6b88713a-a8d6-407c-a4f1-f2575b78ef57",
+      "size": 0.2,
+      "name": "Box3",
+      "position": {
+        "y": 0.3,
+        "x": -0.55,
+        "z": 0.065
+      },
+      "type": "container"
+    },
+    "0.3-thing-16bf178c-75bf-4a28-9ee2-710a88cfcb94": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 0,
+        "b": 209,
+        "g": 157
+      },
+      "timestamp": 1593277576.809594,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(0,157,209)",
+      "id": "0.3-thing-16bf178c-75bf-4a28-9ee2-710a88cfcb94",
+      "size": 0.2,
+      "name": "Box4",
+      "position": {
+        "y": 0.55,
+        "x": -0.55,
+        "z": 0.065
+      },
+      "type": "container"
+    },
+    "0.3-thing-4c3ccadc-a0f0-4b8e-a733-9f003dbf4e22": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 201,
+        "b": 153,
+        "g": 30
+      },
+      "timestamp": 1593277576.928734,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(201,30,153)",
+      "id": "0.3-thing-4c3ccadc-a0f0-4b8e-a733-9f003dbf4e22",
+      "size": 0.1,
+      "name": "Toy4",
+      "position": {
+        "y": 0.35,
+        "x": 0.35,
+        "z": 0.05
+      },
+      "type": "cylinder"
+    },
+    "0.3-thing-d879237d-900f-4740-9786-ed27e38dca06": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 125,
+        "b": 125,
+        "g": 125
+      },
+      "timestamp": 1593277576.695243,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(125,125,125)",
+      "id": "0.3-thing-d879237d-900f-4740-9786-ed27e38dca06",
+      "size": 0.05,
+      "name": "Battery2",
+      "position": {
+        "y": 0.525,
+        "x": 0.425,
+        "z": 0.015
+      },
+      "type": "cube"
+    },
+    "0.3-thing-4c01555d-755e-493c-ad0f-3614bf6c6de4": {
+      "useIcon": true,
+      "orientation": {
+        "y": 0,
+        "x": 3.14,
+        "z": 0
+      },
+      "color": {
+        "r": 194,
+        "b": 182,
+        "g": 34
+      },
+      "timestamp": 1593277576.910155,
+      "txtColor": "rgb(255,255,255)",
+      "elementSetType": "thing",
+      "bgColor": "rgb(194,34,182)",
+      "id": "0.3-thing-4c01555d-755e-493c-ad0f-3614bf6c6de4",
+      "size": 0.1,
+      "name": "Toy3",
+      "position": {
+        "y": 0.35,
+        "x": 0.45,
+        "z": 0.05
+      },
+      "type": "cylinder"
+    }
+  },
+  "macros": {},
+  "version": "0.3",
+  "time_weight": 0.6,
+  "task_keys": []
+}

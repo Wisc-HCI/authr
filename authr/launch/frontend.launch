@@ -1,0 +1,3 @@
+<launch>
+  <node name="frontend" pkg="authr" type="frontend_node_start.sh" args='$(find authr)/' output='screen'/>
+</launch>

@@ -1,0 +1,51 @@
+<div class='content-flex sim' *ngIf="loaded && !hasErrors; else alt">
+  <mat-sidenav-container fxFlex fxLayout="column">
+    <mat-sidenav #rightSidenav class="content-flex" mode="side" position="end" [opened]='getTherblig(authrService.focused) != null'>
+        <app-therblig-expanded-detail [therblig]='getTherblig(authrService.focused)'></app-therblig-expanded-detail>
+    </mat-sidenav>
+
+    <mat-sidenav-content fxFlex fxLayout="column" class="content-flex">
+      <div class="dash mat-elevation-z2" fxLayoutAlign="space-around center" fxFlex fxLayout="row">
+          <button matInput mat-fab color="accent" (click)='restart()' [disabled]='restartBtnDisabled'><mat-icon>replay</mat-icon></button>
+          <button matInput mat-fab color="accent" (click)='start()' [disabled]='startBtnDisabled'><mat-icon>play_arrow</mat-icon></button>
+          <button matInput mat-fab color="accent" (click)='pause()' [disabled]='pauseBtnDisabled'><mat-icon>pause</mat-icon></button>
+      </div>
+      <timeline class="timeline" [scaling]="scaling" [data]='data.expanded_plan' [time]="time" (click)="authrService.focused = null" [therbligs]="activeTherbligs"></timeline>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>
+<ng-template #alt>
+  <div class='content-flex sim'>
+    <div *ngIf="hasErrors" fxFlex fxLayoutAlign="center center" fxLayout="column" class="element mat-elevation-z2">
+        <div mat-card-avatar
+             fxLayoutAlign="space-around center"
+             class="avatar-image mat-elevation-z2 warn bottom-buffer">
+             <mat-icon fxLayoutAlign='space-around center' svgIcon='notset'></mat-icon>
+        </div>
+        <span class="bottom-buffer">Your plan was not fully parametrized, or has errors!</span>
+        <span class="bottom-buffer between-buffer">
+            <button matInput mat-raised-button color="primary" [routerLink]="['/plan']">Go To Plan</button>
+            <button matInput mat-raised-button color="primary" (click)="review = !review">Review</button>
+        </span>
+
+        <div class="reviewer" *ngIf="review && hasErrors">
+            <ng-container *ngFor="let error of errors">
+                <div class="element mat-elevation-z2">
+                    {{error}}
+                </div>
+            </ng-container>
+            <ng-container *ngFor="let error of therbligErrors | keyvalue">
+              <button matInput mat-raised-button color="primary" [routerLink]="['/plan/'+error.key]">{{error.value}}</button>
+            </ng-container>
+            <!-- <ng-container *ngFor="let error of therbligErrors | keyvalue">
+              <button matInput mat-raised-button color="primary" [routerLink]="['/plan']">{{error.value}}</button>
+            </ng-container> -->
+        </div>
+    </div>
+    <div *ngIf="!loaded" fxFlex fxLayoutAlign="center center"fxLayout="column" class="element mat-elevation-z2">
+        <mat-spinner [diameter]='50' class='bottom-buffer'></mat-spinner>
+        Planning...
+    </div>
+  </div>
+</ng-template>

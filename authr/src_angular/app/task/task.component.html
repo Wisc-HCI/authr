@@ -1,0 +1,26 @@
+<mat-card
+    *ngIf='task'
+    class="task"
+    (click)="goToDetail($event);$event.stopPropagation()"
+    [class.mat-elevation-z6]="authrService.focused == taskKey">
+
+    <mat-card-header fxLayoutAlign="space-around center" class='task-handle'>
+      <mat-card-title>{{name}}</mat-card-title>
+    </mat-card-header>
+
+    <div class='content-flex therblig-container'
+         dragula="THERBLIG" id="{{taskKey}}"
+         [(dragulaModel)]="therbligs">
+
+       <therblig-item *ngFor="let therbligKey of therbligs"
+                      [therbligKey]="therbligKey">
+       </therblig-item>
+
+    </div>
+
+    <mat-card-actions>
+        <mat-card-subtitle *ngIf='repeat > 0'>
+            Repeat: {{repeat}} times
+        </mat-card-subtitle>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,33 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-around center">
+    <span>Destinations Setup</span>
+</mat-toolbar>
+<mat-divider></mat-divider>
+<p class='info mat-elevation-z2'>
+  A Destination is a position and orientation pair, specifying a location in the scene.
+</p>
+
+<ng-container *ngFor="let destination of authrService.destinationKeys">
+    <destination [key]=destination></destination>
+</ng-container>
+<div class="form-container" fxLayoutAlign="space-around center">
+    <button matInput mat-raised-button color="accent" (click)='authrService.addDestination()'>Add Destination</button>
+</div>
+
+<mat-divider class='divider-buffer'></mat-divider>
+  <mat-toolbar fxLayout="row" fxLayoutAlign="space-around center">
+      <span>Times of Flight</span>
+  </mat-toolbar>
+<mat-divider></mat-divider>
+
+<ng-container *ngIf="showTofs">
+  <tof-table></tof-table>
+</ng-container>
+
+<div *ngIf="!showTofs" fxLayoutAlign="center center" class="element mat-elevation-z2">
+    <div mat-card-avatar
+         fxLayoutAlign="space-around center"
+         class="avatar-image mat-elevation-z2 warn right-buffer">
+         <mat-icon fxLayoutAlign='space-around center' svgIcon='notset'></mat-icon>
+    </div>
+    Define at least 2 destinations to review times of flight.
+</div>

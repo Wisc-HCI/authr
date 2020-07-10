@@ -1,0 +1,14 @@
+<mat-sidenav-container fxFlex fxLayout="column">
+  <mat-sidenav class="content-flex sidebar-container" mode="side" opened>
+      <app-elements-sidebar></app-elements-sidebar>
+  </mat-sidenav>
+  <mat-sidenav #rightSidenav class="content-flex" mode="side" position="end" [opened]='authrService.focused!==null'>
+      <router-outlet name="config"></router-outlet>
+  </mat-sidenav>
+
+  <mat-sidenav-content fxFlex fxLayout="column" class="content-flex">
+      <app-task-content></app-task-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- [opened]="sb.isActive ? true : false" -->

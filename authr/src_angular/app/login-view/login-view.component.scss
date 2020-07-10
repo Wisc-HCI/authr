@@ -1,0 +1,42 @@
+@import "../../styles.scss";
+
+mat-card {
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 300px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+mat-card-header {
+  height: 100px;
+  background-color: $primary;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  font-size: 28;
+  margin-bottom: 0px
+}
+
+.mat-card-header .mat-card-title {
+  margin-bottom: 0px
+}
+
+::ng-deep .mat-form-field .mat-form-field-prefix, ::ng-deep .mat-form-field .mat-form-field-suffix { top: 0!important; }
+mat-card-content {
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+.primary-text {
+    color:$primary;
+}
+
+.title-icon {
+    width: 80px;
+    height: 80px
+}
+
+.button {
+  width: 260px;
+}

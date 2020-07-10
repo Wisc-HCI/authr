@@ -1,0 +1,31 @@
+# ignore html files
+*.html
+
+# ignore all textual files
+*.txt
+
+# ignore object and archive files
+*.[oa]
+
+# ignore auto-saved files
+*~
+\#*\#
+
+# excepted these manually configured files
+!CMakeLists.txt
+!README.txt
+!application/
+!doc/
+!lib/
+!src/
+!test/
+!eompi.html
+
+# ignore built files
+build/
+release/*
+debug/*
+build/*
+website/EO_star.png
+website/paradiseo_logo.png
+

@@ -1,0 +1,108 @@
+<div *ngIf="authrService.destinations[key] && currentDestination" fxLayout="row" class="element mat-elevation-z2">
+
+    <!-- Destination Image -->
+    <element-icon [type]='"Destination"' [element]='authrService.getDestinationById(key)' class="rowspan">
+    </element-icon>
+
+    <!-- Destination Name -->
+    <div fxLayout="column" fxFlex>
+      <div fxLayoutAlign="space-around center" fxFlex>
+
+        <mat-form-field>
+            <input [disabled]="mode == 'default' || currentDestination.locked" matInput placeholder="Name" [(ngModel)]="currentDestination.name"/>
+        </mat-form-field>
+
+        <mat-checkbox [(ngModel)]="reachable" [disabled]="true">Reachable by Robot</mat-checkbox>
+
+      </div>
+
+      <div fxLayoutAlign="space-around center" fxFlex *ngIf='mode == "edit"'>
+
+        <!-- Destination Position -->
+        <mat-form-field floatLabel="always">
+            <vector-input placeholder="Position" [value]="position" (onChange)="position = $event"></vector-input>
+            <mat-hint>x, y, z</mat-hint>
+        </mat-form-field>
+
+        <!-- Destination Orientation -->
+        <mat-form-field floatLabel="always">
+            <vector-input placeholder="Orientation" [value]="orientation" (onChange)="orientation = $event"></vector-input>
+            <mat-hint>x, y, z</mat-hint>
+        </mat-form-field>
+
+        <button mat-mini-fab color="primary" (click)='validatePose()'>
+          <mat-icon>refresh</mat-icon>
+        </button>
+      </div>
+
+
+    </div>
+
+    <!-- Color Editor (if not locked) - Only shown while in edit mode -->
+    <span class="rowspan" *ngIf='mode == "edit" && !currentDestination.locked'>
+      <button matInput
+              mat-mini-fab
+              matTooltip='Set Color'
+              matTooltipPosition="below"
+              matTooltipShowDelay="250"
+              color="primary"
+              [(colorPicker)]="color"
+              [cpAlphaChannel]="'disabled'"
+              [cpDisableInput]="true"
+              [cpPosition]="'left'">
+          <mat-icon>brush</mat-icon>
+      </button>
+    </span>
+
+    <!-- Save Button - Only shown while in edit mode -->
+    <span class="rowspan" *ngIf="mode == 'edit'">
+      <button matInput
+              mat-mini-fab
+              matTooltip='Save Current Settings'
+              matTooltipPosition="below"
+              matTooltipShowDelay="150"
+              color="primary"
+              (click)='saveData()'>
+          <mat-icon>save</mat-icon>
+      </button>
+    </span>
+
+    <!-- Cancel Button - Only shown while in edit mode -->
+    <div class="rowspan" *ngIf="mode == 'edit'">
+      <button matInput
+              mat-mini-fab
+              matTooltip='Cancel Changes'
+              matTooltipPosition="below"
+              matTooltipShowDelay="250"
+              color="primary"
+              (click)='cancelUpdate()'>
+          <mat-icon>cancel</mat-icon>
+      </button>
+    </div>
+
+    <!-- Edit Button - Only shown while in default mode -->
+    <div class="rowspan" *ngIf="mode == 'default'">
+      <button matInput
+              mat-mini-fab
+              matTooltip='Edit Destination'
+              matTooltipPosition="below"
+              matTooltipShowDelay="250"
+              color="primary"
+              (click)='enterEditMode()'>
+          <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+
+    <div class="rowspan" *ngIf="!currentDestination.locked">
+      <button matInput
+              mat-mini-fab
+              [disabled]='locked'
+              matTooltip='Delete'
+              matTooltipPosition="below"
+              matTooltipShowDelay="150"
+              color="warn"
+              (click)='authrService.deleteDestination(key)'>
+          <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+</div>

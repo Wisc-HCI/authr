@@ -1,0 +1,21 @@
+<div class="bounds" fxFlex fxLayout='column'>
+    <app-main-toolbar fxFlex="64px"></app-main-toolbar>
+    <nav *ngIf="authrService.connected && !authrService.loading" mat-tab-nav-bar mat-align-tabs="center" [color]="accent">
+        <a mat-tab-link *ngFor="let link of navLinks"  [routerLink]="['/'+link.path]" routerLinkActive #rla="routerLinkActive" [disabled]="!link.enabled" [active]="rla.isActive ? true : null">
+            {{link.label}}
+        </a>
+    </nav>
+    <as-split unit="percent"
+              [direction]="'vertical'"
+              [useTransition]="true"
+              [disabled]='!authrService.connected || authrService.loading' fxFlex>
+        <as-split-area [size]="authrService.environment_split" [visible]='authrService.connected && !authrService.loading' [order]='0'>
+            <environment fxFlex='grow' [enabled]='authrService.connected && !authrService.loading'></environment>
+        </as-split-area>
+        <as-split-area [size]="authrService.workspace_split"  fxLayout='column' [visible]='true' [order]='1'>
+            <div fxFlex fxLayout="column">
+                <router-outlet></router-outlet>
+            </div>
+        </as-split-area>
+    </as-split>
+</div>

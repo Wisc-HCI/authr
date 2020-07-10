@@ -1,0 +1,29 @@
+<mat-toolbar color='primary'>
+    <span>Task Detail</span>
+    <button mat-button [matMenuTriggerFor]="menu" class="drop">
+      <mat-icon>expand_more</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="authrService.addMacro(taskKey);openSnackBar()">Export as Macro</button>
+      <button mat-menu-item class="warning" (click)="deleteTask(taskKey)">Delete</button>
+    </mat-menu>
+</mat-toolbar>
+<div class="task-detail" *ngIf='task'>
+    <mat-form-field class="action">
+        <mat-label>Name</mat-label>
+        <input matInput
+               placeholder="Name"
+               [(ngModel)]="taskName"/>
+    </mat-form-field>
+    <mat-form-field class="action">
+        <mat-label>Repeat</mat-label>
+        <input matInput
+               type='number'
+               placeholder="Repeat"
+               [(ngModel)]="taskRepeat"/>
+    </mat-form-field>
+<!--    <button class="action" mat-raised-button color="primary" (click)="authrService.addMacro(taskKey);openSnackBar()"> Export as Macro </button> -->
+    <button class="action" mat-raised-button color="primary" (click)="cancel()" [disabled]="!edited"> Undo </button>
+    <button class="action" mat-raised-button color="primary" (click)="setName()"> Save </button>
+<!--    <button class="action" mat-raised-button color="warn" (click)="deleteTask(taskKey)"> Delete </button> -->
+</div>

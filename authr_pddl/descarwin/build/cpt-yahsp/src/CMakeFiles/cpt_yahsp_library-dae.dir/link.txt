@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libcpt_yahsp_library-dae.a  CMakeFiles/cpt_yahsp_library-dae.dir/yahsp-common.cpp.o CMakeFiles/cpt_yahsp_library-dae.dir/yahsp-seq.cpp.o CMakeFiles/cpt_yahsp_library-dae.dir/yahsp-dae.cpp.o
+/usr/bin/ranlib ../../lib/libcpt_yahsp_library-dae.a

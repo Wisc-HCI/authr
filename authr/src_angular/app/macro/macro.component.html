@@ -1,0 +1,9 @@
+<ng-container *ngIf='macro'>
+  <div class="macro mat-elevation-z2"
+       [ngClass]="{'mat-elevation-z8': (authrService.focused==macroKey && macroKey != null)}"
+       fxFlex fxLayout="row" fxLayoutAlign="space-between center"
+       (click)='$event.stopPropagation();goToDetail($event)'>
+      <mat-icon>filter_tilt_shift</mat-icon>
+      <span fxFlex>{{name}}</span>
+  </div>
+<ng-container>

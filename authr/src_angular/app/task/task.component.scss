@@ -1,0 +1,39 @@
+@import "../../styles.scss";
+@import '~@angular/material/theming';
+
+mat-card-subtitle {
+    margin-left: 12px;
+}
+
+mat-card-header {
+    min-height: 36px;
+}
+
+.therblig-container {
+    min-height:150px;
+    padding: 10px;
+    border-radius: 4px;
+    -moz-box-shadow:    inset 1px 1px 5px rgba(50,50,50,.2);
+    -webkit-box-shadow: inset 1px 1px 5px rgba(50,50,50,.2);
+    box-shadow:         inset 1px 1px 5px rgba(50,50,50,.2);
+}
+
+.task {
+    position: relative;
+    width: 332px;
+    padding: 8px;
+    margin: 12px;
+    border-radius: 4px;
+    // prevent touch selection from interfering with drags
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+
+    // undo these with .task--placeholder
+    background: white;
+
+    // Handle Selection indicators
+    // @include mat-elevation-transition;
+    // @include mat-elevation(2);
+}

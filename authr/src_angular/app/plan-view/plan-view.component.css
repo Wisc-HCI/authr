@@ -1,0 +1,10 @@
+mat-sidenav {
+  width: 250px;
+}
+
+.add-task-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 100;
+}

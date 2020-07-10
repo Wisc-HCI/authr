@@ -1,0 +1,17 @@
+<mat-sidenav-container fxFlex fxLayout="column" class="content-flex">
+  <mat-sidenav class="content-flex sidebar-container" mode="side" opened>
+      <mat-nav-list>
+          <mat-list-item *ngFor="let link of navLinks"
+                         routerLinkActive
+                         #rla="routerLinkActive"
+                         [ngClass]="{'mat-elevation-z2': rla.isActive}"
+                         [routerLink]="['/setup',{ outlets: { setup: [link.path] } }]">
+                         {{link.label}}
+          </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content fxFlex fxLayout="column" class="content-flex">
+      <router-outlet name='setup'></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

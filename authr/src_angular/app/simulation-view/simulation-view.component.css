@@ -1,0 +1,30 @@
+.dash {
+    min-height: 100px;
+    z-index: 2
+}
+
+.sim {
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bottom-buffer {
+  margin-bottom: 30px
+}
+
+.between-buffer {
+  margin-left: 15px;
+  margin-right: 15px
+}
+
+.element {
+    padding: 16px;
+    margin: 5px;
+    background-color:white;
+}
+
+.reviewer {
+    overflow-y: scroll;
+    background-color: grey;
+    border-radius:5px;
+}

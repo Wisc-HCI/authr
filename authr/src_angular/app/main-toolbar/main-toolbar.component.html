@@ -1,0 +1,8 @@
+<mat-toolbar color="primary" class="main-toolbar mat-elevation-z2">
+    <div mat-card-avatar
+         fxLayoutAlign="space-around center"
+         class="avatar-image mat-elevation-z2 accent right-buffer">
+         <mat-icon class='letter-icon' svgIcon='logo'></mat-icon>
+    </div>
+    <mat-icon class='title-icon right-buffer' svgIcon='authr'></mat-icon><h3 *ngIf="authrService.connected" color='accent'>{{authrService.name}}</h3>
+</mat-toolbar>

@@ -1,0 +1,22 @@
+<div mat-card-avatar
+     [style.background-color]="element.bgColor"
+     [style.color]="element.txtColor"
+     fxLayoutAlign="space-around center"
+     class="avatar mat-elevation-z2"
+     [ngClass]="{'avatar-image':size=='large','avatar-preview':size=='small'}"
+     matTooltip='{{element.name}}'
+     matTooltipPosition="below"
+     matTooltipShowDelay="250">
+
+     <ng-container *ngIf='element.useIcon'>
+         <mat-icon [ngClass]="{'text-large':size=='large','text-small':size=='small'}"
+                   svgIcon="{{element.type}}">
+         </mat-icon>
+     </ng-container>
+     <span *ngIf='!element.useIcon'
+           fxLayoutAlign="space-around center"
+           [ngClass]="{'text-large':size=='large','text-small':size=='small'}"
+           [style.color]="element.txtColor">
+         {{element.type.charAt(0) | titlecase}}
+     </span>
+</div>

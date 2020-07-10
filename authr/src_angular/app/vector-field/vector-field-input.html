@@ -1,0 +1,7 @@
+<div class="vector-field-input-container">
+  <input [disabled]="_disabled" type="number" class="vector-field-input-element" [ngModel]="value.x" (ngModelChange)="modelChanged($event,'x')" size="4" [step]="0.05">
+  <span class="vector-field-input-spacer">,</span>
+  <input [disabled]="_disabled" type="number" class="vector-field-input-element" [ngModel]="value.y" (ngModelChange)="modelChanged($event,'y')" size="4" [step]="0.05">
+  <span class="vector-field-input-spacer">,</span>
+  <input [disabled]="_disabled" type="number" class="vector-field-input-element" [ngModel]="value.z" (ngModelChange)="modelChanged($event,'z')" size="4" [step]="0.05">
+</div>

@@ -1,0 +1,5 @@
+string type
+string id
+---
+bool success
+string message

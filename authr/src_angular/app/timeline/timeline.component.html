@@ -1,0 +1,21 @@
+<div class="container" *ngIf='data'>
+  <table mat-table [dataSource]="tableData">
+
+    <ng-container matColumnDef="agent" sticky>
+      <th mat-header-cell *matHeaderCellDef> Agent </th>
+      <td mat-cell *matCellDef="let element">
+        <element-icon [type]='"Agent"'
+                      [element]='authrService.getAgentById(element.agent)'>
+        </element-icon>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="timeline">
+    <th mat-header-cell *matHeaderCellDef> Timeline </th>
+    <td mat-cell *matCellDef="let element"> <app-track [data]="element.timeline" [therbligs]="therbligs"> </app-track></td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columns"></tr>
+    <tr mat-row *matRowDef="let row; columns: columns;"></tr>
+  </table>
+</div>

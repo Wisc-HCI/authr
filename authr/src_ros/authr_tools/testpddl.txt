@@ -1,0 +1,222 @@
+(define (domain NewPlan)
+        (:requirements :durative-actions :action-costs :typing :equality)
+        (:types agent thing destination therblig)
+        
+    (:predicates
+        (therblig_ran ?th - therblig)
+        (therblig_is_THERBLIG0-DOT-3-therblig-03cee8c3-644e-4bcb-bd53-31ad6a5af669_0 ?t - therblig)
+        (therblig_is_THERBLIG0-DOT-3-therblig-7a26d556-622b-410a-865f-1f76c05de970_0 ?t - therblig)
+        (therblig_is_THERBLIG0-DOT-3-therblig-61149b70-9fd9-4c1b-971a-ea86af611da7_0 ?t - therblig)
+        (therblig_is_THERBLIG0-DOT-3-therblig-c920eb73-ba6c-44a2-92a6-58f245f6e88f_0 ?t - therblig)
+        (therblig_is_THERBLIG0-DOT-3-therblig-ab530de9-7aa3-475e-9a84-352847fc77d9_0 ?t - therblig)
+        (therblig_is_THERBLIG0-DOT-3-therblig-39321dee-dd78-4931-a8e0-90f06c2af629_0 ?t - therblig)
+
+        (agent_is_AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd ?a - agent)
+        (agent_is_AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93 ?a - agent)
+
+        (isRobot ?a - agent)
+        (gripping ?a - agent)
+        (at ?a - agent ?d - destination)
+        (at ?t - thing ?d - destination)
+    )
+    
+        
+  (:durative-action THERBLIG0-DOT-3-therblig-03cee8c3-644e-4bcb-bd53-31ad6a5af669_0_AGENT_AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd
+            :parameters (?thr - therblig  ?a - agent )
+            :duration (= ?duration 5)
+            :precondition (and (gripping ?a) (therblig_is_THERBLIG0-DOT-3-therblig-03cee8c3-644e-4bcb-bd53-31ad6a5af669_0 ?thr) (not (therblig_ran ?thr)) (agent_is_AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd ?a))
+            :effect (and (at ?a DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4) (not (at ?a DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17)) (not (at ?a DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d)) (not (at ?a DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)) (not (at ?a DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)) (not (at ?a DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e)) (therblig_ran ?thr) (increase (total-cost) 5 ) )
+  )
+
+
+  (:durative-action THERBLIG0-DOT-3-therblig-7a26d556-622b-410a-865f-1f76c05de970_0_AGENT_AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd
+            :parameters (?thr - therblig  ?a - agent )
+            :duration (= ?duration 5)
+            :precondition (and (gripping ?a) (= (at ?a DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17) (at ?t DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17)) (= (at ?a DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d) (at ?t DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d)) (= (at ?a DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd) (at ?t DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)) (= (at ?a DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93) (at ?t DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)) (= (at ?a DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4) (at ?t DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4)) (= (at ?a DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e) (at ?t DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e)) (therblig_is_THERBLIG0-DOT-3-therblig-7a26d556-622b-410a-865f-1f76c05de970_0 ?thr) (not (therblig_ran ?thr)) (agent_is_AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd ?a))
+            :effect (and (gripping ?a) (therblig_ran ?thr) (increase (total-cost) 5 ) )
+  )
+
+
+  (:durative-action THERBLIG0-DOT-3-therblig-61149b70-9fd9-4c1b-971a-ea86af611da7_0_AGENT_AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd
+            :parameters (?thr - therblig  ?a - agent )
+            :duration (= ?duration 5)
+            :precondition (and (gripping ?a) (= (at ?a DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17) (at ?t DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17)) (= (at ?a DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d) (at ?t DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d)) (= (at ?a DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd) (at ?t DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)) (= (at ?a DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93) (at ?t DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)) (= (at ?a DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4) (at ?t DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4)) (= (at ?a DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e) (at ?t DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e)) (therblig_is_THERBLIG0-DOT-3-therblig-61149b70-9fd9-4c1b-971a-ea86af611da7_0 ?thr) (not (therblig_ran ?thr)) (agent_is_AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd ?a))
+            :effect (and (at THING0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4 DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d) (not (at THING0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4 DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17)) (not (at THING0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4 DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)) (not (at THING0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4 DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)) (not (at THING0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4 DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4)) (not (at THING0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4 DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e)) (at ?a DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d) (not (at ?a DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17)) (not (at ?a DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)) (not (at ?a DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)) (not (at ?a DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4)) (not (at ?a DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e)) (therblig_ran ?thr) (increase (total-cost) 5 ) )
+  )
+
+
+  (:durative-action THERBLIG0-DOT-3-therblig-c920eb73-ba6c-44a2-92a6-58f245f6e88f_0_AGENT_AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93
+            :parameters (?thr - therblig  ?a - agent )
+            :duration (= ?duration None)
+            :precondition (and (gripping ?a) (therblig_is_THERBLIG0-DOT-3-therblig-c920eb73-ba6c-44a2-92a6-58f245f6e88f_0 ?thr) (not (therblig_ran ?thr)) (agent_is_AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93 ?a))
+            :effect (and (at ?a DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e) (not (at ?a DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17)) (not (at ?a DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d)) (not (at ?a DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)) (not (at ?a DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)) (not (at ?a DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4)) (therblig_ran ?thr) (increase (total-cost) 0 ) )
+  )
+
+
+  (:durative-action THERBLIG0-DOT-3-therblig-ab530de9-7aa3-475e-9a84-352847fc77d9_0_AGENT_AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93
+            :parameters (?thr - therblig  ?a - agent )
+            :duration (= ?duration None)
+            :precondition (and (gripping ?a) (= (at ?a DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17) (at ?t DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17)) (= (at ?a DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d) (at ?t DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d)) (= (at ?a DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd) (at ?t DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)) (= (at ?a DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93) (at ?t DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)) (= (at ?a DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4) (at ?t DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4)) (= (at ?a DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e) (at ?t DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e)) (therblig_is_THERBLIG0-DOT-3-therblig-ab530de9-7aa3-475e-9a84-352847fc77d9_0 ?thr) (not (therblig_ran ?thr)) (agent_is_AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93 ?a))
+            :effect (and (gripping ?a) (therblig_ran ?thr) (increase (total-cost) 0 ) )
+  )
+
+
+  (:durative-action THERBLIG0-DOT-3-therblig-39321dee-dd78-4931-a8e0-90f06c2af629_0_AGENT_AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93
+            :parameters (?thr - therblig  ?a - agent )
+            :duration (= ?duration None)
+            :precondition (and (gripping ?a) (= (at ?a DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17) (at ?t DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17)) (= (at ?a DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d) (at ?t DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d)) (= (at ?a DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd) (at ?t DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)) (= (at ?a DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93) (at ?t DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)) (= (at ?a DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4) (at ?t DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4)) (= (at ?a DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e) (at ?t DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e)) (therblig_is_THERBLIG0-DOT-3-therblig-39321dee-dd78-4931-a8e0-90f06c2af629_0 ?thr) (not (therblig_ran ?thr)) (agent_is_AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93 ?a))
+            :effect (and (at THING0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17) (not (at THING0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d)) (not (at THING0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)) (not (at THING0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)) (not (at THING0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4)) (not (at THING0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e)) (at ?a DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17) (not (at ?a DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d)) (not (at ?a DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)) (not (at ?a DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)) (not (at ?a DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4)) (not (at ?a DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e)) (therblig_ran ?thr) (increase (total-cost) 0 ) )
+  )
+
+  (:durative-action TOF0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17_0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d
+        :duration (= ?duration 8)
+  )
+
+  (:durative-action TOF0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17_0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd
+        :duration (= ?duration 2)
+  )
+
+  (:durative-action TOF0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17_0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93
+        :duration (= ?duration 4)
+  )
+
+  (:durative-action TOF0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17_0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4
+        :duration (= ?duration 1)
+  )
+
+  (:durative-action TOF0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17_0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e
+        :duration (= ?duration 6)
+  )
+
+  (:durative-action TOF0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d_0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17
+        :duration (= ?duration 2)
+  )
+
+  (:durative-action TOF0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d_0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd
+        :duration (= ?duration 1)
+  )
+
+  (:durative-action TOF0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d_0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93
+        :duration (= ?duration 7)
+  )
+
+  (:durative-action TOF0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d_0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4
+        :duration (= ?duration 2)
+  )
+
+  (:durative-action TOF0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d_0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e
+        :duration (= ?duration 9)
+  )
+
+  (:durative-action TOF0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd_0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17
+        :duration (= ?duration 7)
+  )
+
+  (:durative-action TOF0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd_0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d
+        :duration (= ?duration 3)
+  )
+
+  (:durative-action TOF0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd_0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93
+        :duration (= ?duration 2)
+  )
+
+  (:durative-action TOF0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd_0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4
+        :duration (= ?duration 4)
+  )
+
+  (:durative-action TOF0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd_0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e
+        :duration (= ?duration 3)
+  )
+
+  (:durative-action TOF0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93_0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17
+        :duration (= ?duration 9)
+  )
+
+  (:durative-action TOF0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93_0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d
+        :duration (= ?duration 6)
+  )
+
+  (:durative-action TOF0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93_0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd
+        :duration (= ?duration 3)
+  )
+
+  (:durative-action TOF0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93_0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4
+        :duration (= ?duration 6)
+  )
+
+  (:durative-action TOF0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93_0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e
+        :duration (= ?duration 4)
+  )
+
+  (:durative-action TOF0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4_0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17
+        :duration (= ?duration 7)
+  )
+
+  (:durative-action TOF0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4_0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d
+        :duration (= ?duration 8)
+  )
+
+  (:durative-action TOF0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4_0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd
+        :duration (= ?duration 5)
+  )
+
+  (:durative-action TOF0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4_0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93
+        :duration (= ?duration 4)
+  )
+
+  (:durative-action TOF0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4_0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e
+        :duration (= ?duration 1)
+  )
+
+  (:durative-action TOF0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e_0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17
+        :duration (= ?duration 1)
+  )
+
+  (:durative-action TOF0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e_0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d
+        :duration (= ?duration 5)
+  )
+
+  (:durative-action TOF0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e_0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd
+        :duration (= ?duration 8)
+  )
+
+  (:durative-action TOF0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e_0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93
+        :duration (= ?duration 5)
+  )
+
+  (:durative-action TOF0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e_0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4
+        :duration (= ?duration 9)
+  )
+
+)
+
+(define (problem assignment)
+      (:domain NewPlan)
+      (:objects
+        (AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93 - agent)
+        (THING0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4 THING0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e - thing)
+        (DEST0-DOT-3-destination-fbddfdc7-b1c0-47ec-a731-58a29a846e17 DEST0-DOT-3-destination-ad7f1fd4-db9a-45cd-9d28-9f99832af82d DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93 DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4 DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e - destination)
+        (THERBLIG0-DOT-3-therblig-03cee8c3-644e-4bcb-bd53-31ad6a5af669_0 THERBLIG0-DOT-3-therblig-7a26d556-622b-410a-865f-1f76c05de970_0 THERBLIG0-DOT-3-therblig-61149b70-9fd9-4c1b-971a-ea86af611da7_0 THERBLIG0-DOT-3-therblig-c920eb73-ba6c-44a2-92a6-58f245f6e88f_0 THERBLIG0-DOT-3-therblig-ab530de9-7aa3-475e-9a84-352847fc77d9_0 THERBLIG0-DOT-3-therblig-39321dee-dd78-4931-a8e0-90f06c2af629_0 - therblig)
+      )
+      (:init
+        (at AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd DEST0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)
+        (gripping AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)
+        (agent_is_AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd AGENT0-DOT-3-agent-b405c9b6-9feb-484f-a82d-031e7e8653bd)
+        (at AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93 DEST0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)
+        (gripping AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)
+        (agent_is_AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93 AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)
+        (isRobot AGENT0-DOT-3-agent-4bd98cab-9e90-45a0-95e9-fa7e13876a93)
+        (at THING0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4 DEST0-DOT-3-thing-046200d4-fd69-4c30-a595-973f332ae5e4)
+        (at THING0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e DEST0-DOT-3-thing-52a739c7-1ae4-42e3-ad3b-d43259f8b98e)
+        (therblig_is_THERBLIG0-DOT-3-therblig-03cee8c3-644e-4bcb-bd53-31ad6a5af669_0 THERBLIG0-DOT-3-therblig-03cee8c3-644e-4bcb-bd53-31ad6a5af669_0)
+        (therblig_is_THERBLIG0-DOT-3-therblig-7a26d556-622b-410a-865f-1f76c05de970_0 THERBLIG0-DOT-3-therblig-7a26d556-622b-410a-865f-1f76c05de970_0)
+        (therblig_is_THERBLIG0-DOT-3-therblig-61149b70-9fd9-4c1b-971a-ea86af611da7_0 THERBLIG0-DOT-3-therblig-61149b70-9fd9-4c1b-971a-ea86af611da7_0)
+        (therblig_is_THERBLIG0-DOT-3-therblig-c920eb73-ba6c-44a2-92a6-58f245f6e88f_0 THERBLIG0-DOT-3-therblig-c920eb73-ba6c-44a2-92a6-58f245f6e88f_0)
+        (therblig_is_THERBLIG0-DOT-3-therblig-ab530de9-7aa3-475e-9a84-352847fc77d9_0 THERBLIG0-DOT-3-therblig-ab530de9-7aa3-475e-9a84-352847fc77d9_0)
+        (therblig_is_THERBLIG0-DOT-3-therblig-39321dee-dd78-4931-a8e0-90f06c2af629_0 THERBLIG0-DOT-3-therblig-39321dee-dd78-4931-a8e0-90f06c2af629_0)
+      )
+      (:goal (and (therblig_ran THERBLIG0-DOT-3-therblig-03cee8c3-644e-4bcb-bd53-31ad6a5af669_0) (therblig_ran THERBLIG0-DOT-3-therblig-7a26d556-622b-410a-865f-1f76c05de970_0) (therblig_ran THERBLIG0-DOT-3-therblig-61149b70-9fd9-4c1b-971a-ea86af611da7_0) (therblig_ran THERBLIG0-DOT-3-therblig-c920eb73-ba6c-44a2-92a6-58f245f6e88f_0) (therblig_ran THERBLIG0-DOT-3-therblig-ab530de9-7aa3-475e-9a84-352847fc77d9_0) (therblig_ran THERBLIG0-DOT-3-therblig-39321dee-dd78-4931-a8e0-90f06c2af629_0)))
+
+      (:metric (and (minimize (total-time))(minimize(total-cost))))
+)
+      

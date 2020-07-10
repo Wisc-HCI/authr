@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libdaex.a  CMakeFiles/daex.dir/utils/posix_timer.cpp.o CMakeFiles/daex.dir/utils/pddl_load.cpp.o CMakeFiles/daex.dir/utils/cli.cpp.o CMakeFiles/daex.dir/core/goal.cpp.o CMakeFiles/daex.dir/utils/eoJsonUtils.cpp.o
+/usr/bin/ranlib ../../lib/libdaex.a

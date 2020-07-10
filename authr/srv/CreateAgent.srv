@@ -1,0 +1,4 @@
+string agent  # unique identifier provided for future reference to this agent
+string endeffector
+---
+bool success

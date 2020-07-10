@@ -1,0 +1,28 @@
+/* @import '~bootstrap/dist/css/bootstrap.css'; */
+
+.mat-menu-item {
+  text-align: center;
+}
+
+.drop {
+  position: fixed;
+  right: 5px;
+}
+
+.warning {
+  background-color: rgb(224, 50, 50);
+  color: white;
+}
+
+.warning:hover {
+  background-color: red;
+}
+
+.task-detail{
+  padding-top: 10px;
+}
+
+.action{
+  margin-left: 15px;
+  margin-right: 2px;
+}

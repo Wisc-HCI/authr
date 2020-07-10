@@ -1,0 +1,90 @@
+<div *ngIf="authrService.things[key]" fxLayoutAlign="space-between center" fxLayout="row" class="element mat-elevation-z2">
+
+    <!-- Thing Image -->
+    <element-icon [type]='"Thing"' [element]='authrService.things[key]' class="rowspan">
+    </element-icon>
+    <!-- Thing Name -->
+
+    <div fxLayout="column" fxFlex>
+
+      <div fxLayout="row" fxLayoutAlign="space-around center" fxFlex>
+
+        <!-- Name -->
+        <mat-form-field>
+            <input matInput placeholder="Name" [(ngModel)]="name" [disabled]="icon=='edit'"/>
+        </mat-form-field>
+        <!-- (ngModelChange)="authrService.setThingById({name:$event,elementSetType:'thing'},key)" -->
+
+        <!-- Type -->
+        <mat-form-field>
+            <mat-select placeholder="Shape" [(ngModel)]="type" [disabled]="icon=='edit'">
+                <mat-option *ngFor="let type of thingTypes" [value]="type.value">
+                    {{type.title}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <!-- (ngModelChange)="authrService.setThingById({type:$event,elementSetType:'thing'},key)" -->
+
+        <!-- Size -->
+        <mat-form-field>
+            <input matInput type='number' placeholder="Size" [(ngModel)]="size" [step]="0.05" [disabled]="icon=='edit'"/>
+            <span fxLayout="center" matSuffix>meters</span>
+        </mat-form-field>
+        <!-- (ngModelChange)="authrService.setThingById({size:valueCheck($event),elementSetType:'thing'},key)" -->
+
+      </div>
+
+    </div>
+
+    <div class="rowspan" *ngIf=showEdit>
+      <button matInput
+              mat-mini-fab
+              matTooltip='Set Color'
+              matTooltipPosition="below"
+              matTooltipShowDelay="250"
+              color="primary"
+              [(colorPicker)]="color"
+              [cpAlphaChannel]="'disabled'"
+              [cpDisableInput]="true"
+              [cpPosition]="'left'">
+          <mat-icon>brush</mat-icon>
+      </button>
+    </div>
+
+    <div class="rowspan">
+      <button matInput
+              mat-mini-fab
+              matTooltip={{tip}}
+              matTooltipPosition="below"
+              matTooltipShowDelay="250"
+              color="primary"
+              (click)='switchMode(0)'>
+          <mat-icon>{{icon}}</mat-icon>
+      </button>
+    </div>
+
+    <div class="rowspan" *ngIf=showEdit>
+      <button matInput
+              mat-mini-fab
+              matTooltip='Cancel'
+              matTooltipPosition="below"
+              matTooltipShowDelay="250"
+              color="primary"
+              (click)='switchMode(1)'>
+          <mat-icon>cancel</mat-icon>
+      </button>
+    </div>
+
+    <div class="rowspan">
+      <button matInput
+              mat-mini-fab
+              matTooltip='Delete'
+              matTooltipPosition="below"
+              matTooltipShowDelay="250"
+              color="warn"
+              (click)='authrService.deleteThing(key)'>
+          <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+
+</div>

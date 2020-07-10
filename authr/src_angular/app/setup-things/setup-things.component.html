@@ -1,0 +1,14 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-around center">
+    <span>Things Setup</span>
+</mat-toolbar>
+<mat-divider></mat-divider>
+<p class='info mat-elevation-z2'>
+  A Thing is an object that can be manipulated by an Agent using Therbligs.<br>
+  When a Thing is created, a paired destination for the initial location is automatically created.
+</p>
+<ng-container *ngFor="let thing of authrService.thingKeys">
+    <thing [key]=thing></thing>
+</ng-container>
+<div class="form-container" fxLayoutAlign="space-around center">
+    <button matInput mat-raised-button color="accent" (click)='authrService.addThing()'>Add Thing</button>
+</div>

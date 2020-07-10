@@ -1,0 +1,62 @@
+<launch>
+
+    <arg name="robot"/>
+    <arg name="simulated" default='false'/>
+    <arg name='ssl' default='false'/>
+    <arg name='certfile' value=''/>
+    <arg name='keyfile' value=''/>
+    <arg name='verifier' default='standard'/>  <!-- Set to 'advanced' for a newer version -->
+
+    <rosparam param='/authr/robot' subst_value="True">$(arg robot)</rosparam>
+    <rosparam param='/authr/verifier' subst_value='True'>$(arg verifier)</rosparam>
+
+    <!-- Include Rosbridge launches -->
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+      <arg name='ssl' value='$(arg ssl)'/>
+      <arg name='certfile' value='$(arg certfile)'/>
+      <arg name='keyfile' value='$(arg keyfile)'/>
+    </include>
+    <node name="tf2_web_republisher" pkg="tf2_web_republisher" type="tf2_web_republisher"/>
+
+    <node name='interactive_marker_proxy_elements' pkg='interactive_marker_proxy' type='proxy'>
+        <remap from="/topic_ns" to="/interactive_marker/elements" />
+        <remap from="/target_frame" to="/base_link" />
+    </node>
+    <!-- Upload robot_descriptions and MoveIt Configs -->
+
+    <!-- UR3 -->
+    <include if="$(eval arg('robot') == 'ur3')" file="$(find authr)/launch/ur3.launch">
+      <arg name='simulated' value="$(arg simulated)"/>
+    </include>
+
+    <!-- UR5 -->
+    <include if="$(eval arg('robot') == 'ur5')" file="$(find authr)/launch/ur5.launch">
+      <arg name='simulated' value="$(arg simulated)"/>
+    </include>
+
+    <!-- UR10 -->
+    <include if="$(eval arg('robot') == 'ur10')" file="$(find authr)/launch/ur10.launch">
+      <arg name='simulated' value="$(arg simulated)"/>
+    </include>
+
+    <!-- Panda -->
+    <include if="$(eval arg('robot') == 'panda')" file="$(find authr)/launch/panda.launch">
+      <arg name='simulated' value="$(arg simulated)"/>
+    </include>
+
+    <!-- Start backend nodes -->
+    <node pkg="authr" type="authr_sim.py"  name="authr_sim"  output="screen">
+        <param if="$(eval arg('robot') == 'ur3' or arg('robot') == 'ur5' or arg('robot') == 'ur10')" name="robot_effort_scalar" value="0.8039"/>
+        <param if="$(eval arg('robot') == 'ur3' or arg('robot') == 'ur5' or arg('robot') == 'ur10')" name="robot_effort_offset" value="0.0"/>
+        <param if="$(eval arg('robot') == 'panda')" name="robot_effort_scalar" value="-0.0349"/>
+        <param if="$(eval arg('robot') == 'panda')" name="robot_effort_offset" value="0.0349"/>
+
+        <param name="human_effort_scalar" value="1"/>
+        <param name="human_effort_offset" value="0"/>
+    </node>
+    <node pkg="authr" type="authr_plan.py" name="authr_plan" output="screen">
+        <param name="collider_mesh_path" value="$(find custom_meshes)/container.stl"/>
+    </node>
+    <node pkg="authr" type="authr_env.py"  name="authr_env"  output="screen"/>
+
+</launch>

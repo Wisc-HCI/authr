@@ -1,0 +1,18 @@
+.macro-detail{
+  padding-top: 10px;
+}
+
+.action{
+  margin-left: 15px;
+  margin-right: 2px;
+}
+
+.therblig-container {
+    min-height:150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    -moz-box-shadow:    inset 1px 1px 5px rgba(50,50,50,.2);
+    -webkit-box-shadow: inset 1px 1px 5px rgba(50,50,50,.2);
+    box-shadow:         inset 1px 1px 5px rgba(50,50,50,.2);
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>robot_descriptions</name>
+  <version>1.0.0</version>
+  <description>
+      Custom URDFs for Wisc-HCI robots
+  </description>
+
+  <author>Wisc-HCI</author>
+  <maintainer email="todo@todo.todo"></maintainer>
+
+  <license>BSD</license>
+
+  <url type="repository">https://github.com/Wisc-HCI/robot_configurations</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+
+  <export>
+  </export>
+</package>

@@ -1,0 +1,5 @@
+./seq-opt/elevators-strips/ 2 1 196 1 219.42 45.0389 45.0389 nan
+
+
+
+
