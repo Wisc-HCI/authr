@@ -1,0 +1,5 @@
+
+*.pyc
+descarwin/build/dae/dae.status
+temp.domain.pddl
+temp.instance.pddl

@@ -1,0 +1,10 @@
+node_modules/*
+**.DS_Store
+package-lock.json
+
+**.pyc
+package-lock.json
+tmp/domain**
+tmp/instance**
+tmp/plan**
+*.icloud
