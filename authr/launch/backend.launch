@@ -48,6 +48,7 @@
     <node pkg="authr" type="authr_sim.py"  name="authr_sim"  output="screen">
         <param if="$(eval arg('robot') == 'ur3' or arg('robot') == 'ur5' or arg('robot') == 'ur10')" name="robot_effort_scalar" value="0.8039"/>
         <param if="$(eval arg('robot') == 'ur3' or arg('robot') == 'ur5' or arg('robot') == 'ur10')" name="robot_effort_offset" value="0.0"/>
+        
         <param if="$(eval arg('robot') == 'panda')" name="robot_effort_scalar" value="-0.0349"/>
         <param if="$(eval arg('robot') == 'panda')" name="robot_effort_offset" value="0.0349"/>
 

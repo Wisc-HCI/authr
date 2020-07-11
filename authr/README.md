@@ -44,3 +44,7 @@ Finally, for the frontend install Node.js and NPM. Run `npm install` inside the 
 ### Github Build
 - angular: Build app then host on remote server. (run `npm run-script build`)
 - launch: Launch backend on local machine
+
+
+
+Adding a robot TODO
