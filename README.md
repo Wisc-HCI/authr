@@ -1,4 +1,4 @@
-# Authr - Release
+# Authr
 Provided in this repository is the release version of Authr along with additional ROS package dependencies configured to work with the Authr software.
 
 Authr is an environment designed to allow engineers to translate existing manual processes into collaborative human-robot plans. Additionally, Authr provides the ability to design exclusively robotic plans.
@@ -38,7 +38,7 @@ Then install the robot dependencies,
 ### 3. Install Python Dependencies
 Next install the following Python 2 modules using pip.
 ```
-pip install z3-solver, scipy, numpy, pyquaternion pymongo
+pip install z3-solver scipy numpy pyquaternion pymongo
 ```
 
 We also need to confirm state of several modules in order for everything to work.
@@ -74,7 +74,7 @@ roslaunch authr frontend.launch
 and
 
 ```
-roslaunch authr backend.launch robot:=(ur3 | ur5 | ur10) [verifier:=(standard | advanced)]
+roslaunch authr backend.launch robot:=(ur3 | ur5 | ur10 | panda) [verifier:=(standard | advanced)]
 ```
 
 Currently our implementation supports Universal Robots UR3, UR5, and UR10 and Franka Emika Panda. We do not provide preconfigured MoveIt packages for Universal Robots E-Series or other collaborative robots like Rethink's Sawyer robot. Authr can be extended to support these robots but will require some changes to the launch file. Checkout the implementation section of this README for details.
@@ -82,7 +82,7 @@ Currently our implementation supports Universal Robots UR3, UR5, and UR10 and Fr
 By default the verifier parameter is set to standard. This is the version we used for technical and user evaluations in our paper. The advanced option is a new Z3 implementation that provides shorter
 verification and allocation times.
 
-We also provide a static build of our user interface [here](https://wisc-hci.github.io/authr-release/). The backend subsystem will still need to be run locally.
+We also provide a static build of our user interface [here](https://wisc-hci.github.io/authr-release/). The backend subsystem will still need to be run locally. Additionally, because Github enforces SSL, you will need to configure your backend to use a valid certificate.
 
 ## Implementation Details
 In this repository we included the Authr interface itself along with several support libraries used in our lab to provide robot control to Authr. Checkout each subsystem's README files listed below.
@@ -131,4 +131,4 @@ In order for Authr to visualize the robot within the embedded 3D workspace visua
 The name and structure of the directory should match the convention provided in the robot's URDF.
 
 #### 4. Share
-If you think the robot configuration created is useful for other engineers, researchers, and developers then please feel free to create an issue or pull request. Likewise, if there is any challenge using Authr or if there are suggested features for future iterations. 
+If you think the robot configuration created is useful for other engineers, researchers, and developers then please feel free to create an issue or pull request. Likewise, if there is any challenge using Authr or if there are suggested features for future iterations, please create issues and pull requests. 
