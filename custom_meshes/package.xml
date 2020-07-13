@@ -3,7 +3,7 @@
     <version>0.0.1</version>
     <description>Provides meshes for RVIZ</description>
 
-    <<maintainer email="schoen@cs.wisc.edu">Andrew Schoen</maintainer>
+    <maintainer email="schoen@cs.wisc.edu">Andrew Schoen</maintainer>
     <maintainer email="cdhenrichs@cs.wisc.edu">Curt Henrichs</maintainer>
 
     <license>MIT</license>
