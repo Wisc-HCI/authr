@@ -13,11 +13,19 @@ If you find Authr useful for your project, please consider citing our paper,
 FILL IN PAPER DETAILS
 ```
 
+Or the BibTex,
+
+```BibTeX
+FILL IN PAPER DETAILS
+```
+
 To get started using Authr, follow the installation guide below along with the starting Authr guide. Or to start investigating the implementation of Authr, check out the implementation details section at the bottom of this README.
 
 ## Installation
 Authr was developed for ROS Melodic on Ubuntu 18.04. Installation may need to be
 modified if targeting a different environment.
+
+Note that using `rosdep install <PACKAGE` will not install all of the dependencies for authr specific packages. Manual installation is required due to version / dependency issues.
 
 ### 1. Clone this repository
 First clone this repository into your ROS catkin workspace.
@@ -131,4 +139,4 @@ In order for Authr to visualize the robot within the embedded 3D workspace visua
 The name and structure of the directory should match the convention provided in the robot's URDF.
 
 #### 4. Share
-If you think the robot configuration created is useful for other engineers, researchers, and developers then please feel free to create an issue or pull request. Likewise, if there is any challenge using Authr or if there are suggested features for future iterations, please create issues and pull requests. 
+If you think the robot configuration created is useful for other engineers, researchers, and developers then please feel free to create an issue or pull request. Likewise, if there is any challenge using Authr or if there are suggested features for future iterations, please create issues and pull requests.
