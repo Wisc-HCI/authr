@@ -92,6 +92,11 @@ verification and allocation times.
 
 We also provide a static build of our user interface [here](https://wisc-hci.github.io/authr-release/). The backend subsystem will still need to be run locally. Additionally, because Github enforces SSL, you will need to configure your backend to use a valid certificate.
 
+## Usage
+
+Once you have the frontend and backend running, you will need to point the browser to the hosted webpage. This should be printed in the output of NPM, but if you are running on your machine locally, this is likely `localhost:4200`. The launch page shows an entry field for the URL of the backend. The ROS connection uses port `9090` on localhost (unless you have specified otherwise), so entering `localhost:9090` should allow you access to the tool. A video of using the tool can be found `[ADD LINK]`.
+
+
 ## Implementation Details
 In this repository we included the Authr interface itself along with several support libraries used in our lab to provide robot control to Authr. Checkout each subsystem's README files listed below.
 
