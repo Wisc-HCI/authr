@@ -6,5 +6,5 @@ Our system is released under the MIT license though as this release packages sev
 - robot_behavior is released under the MIT [license](./robot_behavior/LICENSE)
 - robot_configurations
   - Universal Robots provided software is under BSD [license](./robot_configurations/UR_LICENSE)
-  - Franka Emika Panda provided software is under Apache 2.0 [license](./robot_configurations/FEP_LICENSE)
+  - Franka Emika Panda MoveIt Configuration is under BSD [license](./robot_configurations/FEP_LICENSE)
 - robotiq_85_gripper is under GPL 2.0 [license](./robotiq_85_gripper/LICENSE) (at time of fork)

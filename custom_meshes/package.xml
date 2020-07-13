@@ -3,9 +3,10 @@
     <version>0.0.1</version>
     <description>Provides meshes for RVIZ</description>
 
-    <maintainer email="todo@todo.com"></maintainer>
-    <license>TODO</license>
-    <author>TODO</author>
+    <<maintainer email="schoen@cs.wisc.edu">Andrew Schoen</maintainer>
+    <maintainer email="cdhenrichs@cs.wisc.edu">Curt Henrichs</maintainer>
+
+    <license>MIT</license>
 
     <buildtool_depend>catkin</buildtool_depend>
 
