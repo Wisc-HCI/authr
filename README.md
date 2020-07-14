@@ -23,7 +23,7 @@ To get started using Authr, follow the installation guide below along with the s
 Authr was developed for ROS Melodic on Ubuntu 18.04. Installation may need to be
 modified if targeting a different environment.
 
-Note that using `rosdep install <PACKAGE` will not install all of the dependencies for authr specific packages. Manual installation is required due to version / dependency issues.
+Note that using `rosdep install <PACKAGE>` will not install all of the dependencies for authr specific packages. Manual installation is required due to version / dependency issues. Follow the steps below.
 
 ### 1. Clone this repository
 First clone this repository into your ROS catkin workspace.
@@ -37,9 +37,9 @@ Next install the following ROS Bridge dependencies,
 
 Then install the robot dependencies,
 - [MoveIt](http://wiki.ros.org/moveit) via `apt install ros-<VERSION>-moveit`
-- [industrial_core](wiki.ros.org/industrial_core) via `apt install ros-<VERSION>-industrial-core`
-- (Install if using Panda) Follow their [installation guide](https://frankaemika.github.io/docs/installation_linux.html) and checkout their Github: [frankaemika/franka_ros](https://github.com/frankaemika/franka_ros)
-- (Install if using Universal Robots)[ros-industrial/universal_robot](https://github.com/ros-industrial/universal_robot)
+- [industrial_core](http://wiki.ros.org/industrial_core) via `apt install ros-<VERSION>-industrial-core`
+- (Install if using Franka Emika Panda) Follow their [installation guide](https://frankaemika.github.io/docs/installation_linux.html) and checkout their Github: [frankaemika/franka_ros](https://github.com/frankaemika/franka_ros)
+- (Install if using Universal Robots) Clone [ros-industrial/universal_robot](https://github.com/ros-industrial/universal_robot)
 
 ### 3. Install Python Dependencies
 Next install the following Python 2 modules using pip.
@@ -50,7 +50,7 @@ pip install z3-solver scipy numpy pyquaternion pymongo
 We also need to confirm state of several modules in order for everything to work.
 - tornado should be version 4.5.3 to fix disconnect issues with rosbridge. Install with `pip install tornado==4.5.3`.
 - pymongo should be installed to fix disconnect issues with rosbridge.
-- pyassimp needs to be at version 3.3 or 4.1.3 to fix Segault when using MoveIt with custom mesh collider objects. Install with `pip install pyassimp==4.1.3`.
+- pyassimp needs to be at version 3.3 or 4.1.3 to fix a Segault when using MoveIt with custom mesh collider objects. Install with `pip install pyassimp==4.1.3`.
 
 ### 4. Install Node.js
 Finally, for Authr's user interface install Node.js and NPM. For ROS Melodic just installing from the package manager may cause ROS to [uninstall](https://answers.ros.org/question/329144/installing-ros-melodic-ros-base-deletes-npm-installing-npm-deletes-ros-how-can-i-have-both/). Simply enter the following into the terminal.
