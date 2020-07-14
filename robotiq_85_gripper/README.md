@@ -29,6 +29,9 @@ planning pipelines like MoveIt into driver specific messages.
   - Lowers polling rate to device
 - Optional command time limits on ROS subscriber
 
+## Authr Release Notes
+Robot Configurations with UR robot's require this package for the Robotiq description. The driver is not being used.
+
 ## URScript Version
 The URScript driver was developed specifically for the UR3e robot in the lab.
 This driver provides basic gripper functionality without having to bringup the

@@ -6,6 +6,8 @@ arm trajectory planner wrappers written in python under a common abstraction.
 Also provided is a suite of pre-built behaviors to get started on your robot
 project.
 
+Note that for the Authr release we have simplified the package to only the necessary modules.
+
 ## Dependencies
 Currently there are no required ROS packages to build this package. However, to use
 the planner interface install MoveIt.

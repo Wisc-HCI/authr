@@ -1,8 +1,8 @@
 # Robot Configurations
-
-## Summary
 Provides a single repository for robot configurations used in lab projects/studies
 with non-standard MoveIt configurations and/or robot descriptions.
+
+Note that for the Authr release we have simplified the package to only the necessary modules.
 
 ## Workflow
 

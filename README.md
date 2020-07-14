@@ -13,8 +13,6 @@ If you find Authr useful for your project, please consider citing our paper,
 FILL IN PAPER DETAILS
 ```
 
-Or the BibTex,
-
 ```BibTeX
 FILL IN PAPER DETAILS
 ```
