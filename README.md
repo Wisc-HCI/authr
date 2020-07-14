@@ -9,10 +9,6 @@ For more details on how we implemented and evaluated Authr, check out our paper 
 
 If you find Authr useful for your project, please consider citing our paper,
 
-```
-FILL IN PAPER DETAILS
-```
-
 ```BibTeX
 FILL IN PAPER DETAILS
 ```
@@ -92,7 +88,9 @@ We also provide a static build of our user interface [here](https://wisc-hci.git
 
 ## Usage
 
-Once you have the frontend and backend running, you will need to point the browser to the hosted webpage. This should be printed in the output of NPM, but if you are running on your machine locally, this is likely `localhost:4200`. The launch page shows an entry field for the URL of the backend. The ROS connection uses port `9090` on localhost (unless you have specified otherwise), so entering `localhost:9090` should allow you access to the tool. A video of using the tool can be found `[ADD LINK]`.
+Once you have the frontend and backend running, you will need to point the browser to the hosted webpage. This should be printed in the output of NPM, but if you are running on your machine locally, this is likely `localhost:4200`. The launch page shows an entry field for the URL of the backend. The ROS connection uses port `9090` on localhost (unless you have specified otherwise), so entering `localhost:9090` should allow you access to the tool. A video of using the tool can be found below: 
+
+[![Authr Interface](http://img.youtube.com/vi/9vS3B3UrpTU/0.jpg)](http://www.youtube.com/watch?v=9vS3B3UrpTU "Authr").
 
 
 ## Implementation Details
