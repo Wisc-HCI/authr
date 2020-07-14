@@ -5,7 +5,7 @@ ROS Package/Angular Frontend for the NRI Authoring Tool (Authr)
 Authr was developed for ROS Melodic on Ubuntu 18.04. Installation may need to be
 modified if targeting a different environment.
 
-Note that using `rosdep install <PACKAGE` will not install all of the dependencies for authr specific packages. Manual installation is required due to version / dependency issues.
+Note that using `rosdep install <PACKAGE>` will not install all of the dependencies for authr specific packages. Manual installation is required due to version / dependency issues.
 
 ### 1. Clone this repository
 First clone this repository into your ROS catkin workspace.
@@ -16,12 +16,12 @@ Next install the following ROS Bridge dependencies,
   - [RobotWebTools/tf2_web_republisher](https://github.com/RobotWebTools/tf2_web_republisher)
   - [RobotWebTools/interactive_marker_proxy](https://github.com/RobotWebTools/interactive_marker_proxy)
   - [GT-RAIL/rosauth](https://github.com/GT-RAIL/rosauth)
-
+  
 Then install the robot dependencies,
 - [MoveIt](http://wiki.ros.org/moveit) via `apt install ros-<VERSION>-moveit`
-- [industrial_core](wiki.ros.org/industrial_core) via `apt install ros-<VERSION>-industrial-core`
-- (Install if using Panda) Follow their [installation guide](https://frankaemika.github.io/docs/installation_linux.html) and checkout their Github: [frankaemika/franka_ros](https://github.com/frankaemika/franka_ros)
-- (Install if using Universal Robots)[ros-industrial/universal_robot](https://github.com/ros-industrial/universal_robot)
+- [industrial_core](http://wiki.ros.org/industrial_core) via `apt install ros-<VERSION>-industrial-core`
+- (Install if using Franka Emika Panda) Follow their [installation guide](https://frankaemika.github.io/docs/installation_linux.html) and checkout their Github: [frankaemika/franka_ros](https://github.com/frankaemika/franka_ros)
+- (Install if using Universal Robots) Clone [ros-industrial/universal_robot](https://github.com/ros-industrial/universal_robot)
 
 ### 3. Install Python Dependencies
 Next install the following Python 2 modules using pip.
@@ -78,20 +78,6 @@ Once you have the frontend and backend running, you will need to point the brows
 
 
 ## Implementation Details
-In this repository we included the Authr interface itself along with several support libraries used in our lab to provide robot control to Authr. Checkout each subsystem's README files listed below.
-
-1. [Authr](./authr/README.md) is a visual programming tool to convert
-
-2. [robot_behavior](./robot_behavior/README.md) provides a bridge between the Authr system and the low-level ROS and MoveIt systems.
-
-3. [robot_configurations](./robot_configurations/README.md) provides standard robot configurations we use in our lab for various projects. For Authr we currently support Universal Robots UR3, UR5, and UR10 and Franka Emika Panda.
-
-4. [robotiq_85_gripper](./robotiq_85_gripper/README.md) is a fork of the Robotiq driver that has been modified and extended by our lab. Robot configurations and robot_behavior depend on this version of the robotiq_85_gripper ROS package to supply an action server and a modified URDF.
-
-5. [custom_meshes](./custom_meshes/README.md) provides ROS with the custom meshes used in the Authr visualization.
-
-6. [authr_pddl](./authr_pddl/README.md) used to evaluate Authr's custom allocation algorithm against a traditional PDDL approach. This subdirectory is not needed to run the actual interface.
-
 ### Adding a Robot
 Adding a robot to Authr is relatively straightforward though it has a few caveats. Below we detail the steps you should take to configure your robot.
 
