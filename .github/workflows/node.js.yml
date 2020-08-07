@@ -29,6 +29,3 @@ jobs:
     - name: Build
       working-directory: ./authr
       run: npm run build --if-present
-    - name: Test
-      working-directory: ./authr
-      run: npm test
