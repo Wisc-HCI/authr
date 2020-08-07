@@ -50,7 +50,7 @@ export class TaskDetailComponent implements OnInit {
   public set taskName(value) {
     this.edited = true;
     this.task.name = value;
-  } 
+  }
 
   public get taskRepeat() {
     if (this.start === true) {
@@ -62,7 +62,7 @@ export class TaskDetailComponent implements OnInit {
 
   public set taskRepeat(value) {
     this.edited = true;
-    this.task.repeat = value; 
+    this.task.repeat = value;
   }
 
   private setName() {
@@ -73,17 +73,17 @@ export class TaskDetailComponent implements OnInit {
     this.start = !this.start;
   }
 
-  private setRepeat(value) {
+  public setRepeat(value) {
     this.task.repeat = value;
     this.authrService.setTaskById({"repeat":this.task.repeat},this.taskKey);
   }
 
-  private cancel() {
+  public cancel() {
     this.task.name = this.prevTaskName;
     this.authrService.setTaskById({"name":this.prevTaskName},this.taskKey);
   }
 
-  private deleteTask(key) {
+  public deleteTask(key) {
       this.router.navigate(['/plan']);
       this.authrService.focused = null;
       this.authrService.deleteTask(key);

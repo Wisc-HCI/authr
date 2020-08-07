@@ -16,9 +16,9 @@ export class ElementDestinationComponent implements OnInit {
 
   @Input() key: string;
 
-  private mode = 'default';
-  private backupDestination = null;
-  private currentDestination = null;
+  public mode = 'default';
+  public backupDestination = null;
+  public currentDestination = null;
 
   constructor(public snackbar: MatSnackBar,
               public authrService:AuthrService) {
