@@ -25,7 +25,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Clean Install
       working-directory: ./authr
-      run: ls
       run: npm ci
     - name: Build
       working-directory: ./authr
