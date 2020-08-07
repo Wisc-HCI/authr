@@ -84,7 +84,7 @@ Currently our implementation supports Universal Robots UR3, UR5, and UR10 and Fr
 By default the verifier parameter is set to standard. This is the version we used for technical and user evaluations in our paper. The advanced option is a new Z3 implementation that provides shorter
 verification and allocation times.
 
-We also provide a static build of our user interface [here](https://wisc-hci.github.io/authr-release/). The backend subsystem will still need to be run locally. Additionally, because Github enforces SSL, you will need to configure your backend to use a valid certificate.
+We also provide a static build of our user interface [here](https://wisc-hci.github.io/authr/index.html). The backend subsystem will still need to be run locally. Additionally, because Github enforces SSL, you will need to configure your backend to use a valid certificate.
 
 ## Usage
 
