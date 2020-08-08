@@ -1,5 +1,5 @@
 # Authr
-Provided in this repository is the release version of Authr along with additional ROS package dependencies configured to work with the Authr software.
+Provided in this repository is the released version of Authr along with additional ROS package dependencies configured to work with the Authr software.
 
 Authr is an environment designed to allow engineers to translate existing manual processes into collaborative human-robot plans. Additionally, Authr provides the ability to design exclusively robotic plans.
 
@@ -96,7 +96,7 @@ Once you have the frontend and backend running, you will need to point the brows
 ## Implementation Details
 In this repository we included the Authr interface itself along with several support libraries used in our lab to provide robot control to Authr. Checkout each subsystem's README files listed below.
 
-1. [Authr](./authr/README.md) is a visual programming tool to convert
+1. [Authr](./authr/README.md) is a visual programming tool to convert manual tasks into human-robot programs.
 
 2. [robot_behavior](./robot_behavior/README.md) provides a bridge between the Authr system and the low-level ROS and MoveIt systems.
 
