@@ -59,22 +59,3 @@ To use this version simply run this node in replacement of the original robotiq
 driver. Can be used with the action-server.
 
 Note: Additional work can be done to fine-tune the timing.
-
-
-# What work still has to be done?
-As with most research support code, the software can get a bit tangled at times. If you are new to the lab or just interested in furthering this driver, here are a few things that need to be done.
-
-- Write a fake gripper driver node.
-  - Ideally this would have a functional model and a more accurate rate limited model.
-
-- Integrate the remote serial version and original version into a singular parameterized version.
-  - Originally split to prevent code dependent on this implementation from potentially breaking.
-  - The parameterization should be demonstrated in launch files for both original new remote configs.
-
-- Rework the URscript action server variant of the driver to provide feedback and an actual stop instead of timeout.
-  -This is a more challenging task that will require exploration on how messages can be sent out from the robot.
-  - Probably will need to set up a TCP socket to transfer status.
-  - There should be some way to send over gripper parameters without having to redeploy the full script
-
-- Refactoring meta-package / packages to only include our contribution.
-  - Original packages and code will be a dependency
