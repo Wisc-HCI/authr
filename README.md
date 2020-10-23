@@ -5,7 +5,7 @@ Authr is an environment designed to allow engineers to translate existing manual
 
 What makes Authr novel is a fully defined pipeline for designing collaborative applications. The user can iteratively setup the virtual work environment model, program in a visual drag-and-drop programming environment, utilize automatic agent allocation, and simulate their plan with the built-in, ROS-based plan simulator. Authr is designed around a hierarchical task breakdown with three levels: the plan, tasks, and therbligs. Each task within a plan is a linear process of work composed of therbligs. Therbligs are the lowest-level action primitive used in Authr and originally established by Gilbreth and Gilbreth for human work. Authr currently implements a subset of the physical therbligs with the goal of future work to operationalize cognitive therbligs.
 
-For more details on how we implemented and evaluated Authr, check out our paper [Authr: A Task Authoring Environment for Human-Robot Teams](https://par.nsf.gov/biblio/10198129).
+For more details on how we implemented and evaluated Authr, check out our paper [Authr: A Task Authoring Environment for Human-Robot Teams](https://dl.acm.org/doi/10.1145/3379337.3415872).
 
 If you find Authr useful for your project, please consider citing our paper,
 
